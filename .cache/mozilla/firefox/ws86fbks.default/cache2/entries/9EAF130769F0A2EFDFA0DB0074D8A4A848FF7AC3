@@ -1,0 +1,2682 @@
+/* ------------------------------- Override Ext CSS For Bug Fixing ---------------------- */
+.ext-gecko .x-window-body .x-form-item {
+    overflow: hidden;
+}
+
+.x-form-display-field {
+    padding-top: 4px;
+}
+
+.ext-gecko .x-form-display-field, .ext-strict .ext-ie7 .x-form-display-field {
+    padding-top: 4px;
+}
+
+.ext-strict .ext-ie8 .x-form-display-field {
+    padding-top: 4px;
+}
+
+/* ------------------------------- Framework CSS Specifications ------------------------- */
+
+/* --- begin x-edit-tab support --- */
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-left .x-tab-strip-icon,
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-right .x-tab-strip-icon {
+    background: url(../images/icons/tab_edit_small.png) no-repeat 90% 50% !important;
+}
+
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-left .x-tab-strip-icon {
+    top: 5px; /* left center */
+    }
+
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-right .x-tab-strip-icon {
+    right: 0px; /* right top */
+}
+
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-left .x-tab-strip-text {
+    padding-left:20px !important;
+}
+
+.x-tab-strip-active .x-tab-strip-inner.x-edit-tab-right .x-tab-strip-text {
+    padding-right:20px !important;
+}
+/* --- end x-edit-tab support --- */
+
+/* --- begin x-tab-strip-icon support --- */
+.x-tab-strip-active .x-tab-strip-inner .x-tab-strip-icon,
+.x-tab-strip-active .x-tab-strip-inner .x-tab-strip-icon {
+    cursor: pointer;
+    display: block;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    filter: alpha(opacity = 80);
+    -moz-opacity:0.8;
+    opacity:0.8;
+}
+.x-tab-strip .x-btn-icon .x-btn-small .x-btn-text.addView {
+    width:12px;
+}
+
+.x-tab-strip-active .x-tab-strip-icon:hover{
+    filter: alpha(opacity = 100) !important;
+    opacity:1 !important;
+    -moz-opacity:1 !important;
+}
+
+.x-tab-strip-active .x-tab-strip-inner {
+    position: relative;
+}
+
+.x-tab-strip-top .x-tab-strip-closable.x-tab-with-icon .x-tab-left, .x-tab-strip-top .x-tab-strip-closable.x-tab-strip-active.x-tab-with-icon .x-tab-left {
+    padding-right: 17px;
+}
+
+.x-tab-strip-top .x-tab-with-icon .x-tab-left {
+    padding-right: 10px;
+}
+
+.x-tab-strip-top .x-tab-with-icon .x-tab-right {
+    padding-left:10px;
+}
+
+.x-tab-strip-top .x-tab-strip-active.x-tab-with-icon .x-tab-left {
+    padding-right: 6px;
+}
+.x-tab-strip-top .x-tab-strip-active.x-tab-with-icon .x-tab-right {
+    padding-left:6px;
+}
+
+.x-tab-strip .x-tab-with-icon span.x-tab-strip-text {
+    padding: 5px 0 6px;
+}
+
+.x-tab-strip .x-tab-strip-active.x-tab-with-icon span.x-tab-strip-text {
+    padding-left: 6px;
+}
+/* --- end x-tab-strip-icon support --- */
+
+/*.pan-grid-filter {
+    border-right: none !important;
+}*/
+
+.x-link-button-field {
+    margin-top: -3px;
+    margin-left: -4px;
+}
+
+.x-form-search-info {
+    color: #999 !important;
+    /*background-color: transparent;*/
+    background-color: #FFFFFF;
+    text-align: right;
+    border-left: none !important;
+}
+
+.x-form-search-info-mask {
+    filter: alpha(opacity = 0); /* Internet Explorer       */
+    -moz-opacity: 0; /* Mozilla 1.6 and below   */
+    opacity: 0; /* newer Mozilla and CSS-3 */
+    height: 20px;
+}
+
+/* below is to workaround firefox 3 bug */
+.ext-gecko .x-tree-node-action {
+    margin-top: -15px;
+}
+
+/* below is to fix srcoller bar overlap the action button on safari mac */
+.ext-safari .x-tree-node-action {
+    margin-right: 8px;
+}
+
+.x-tree-node-action {
+    margin-top: 2px;
+}
+/* bgn x-more-combo */
+.x-toolbar-grid-cell-hint .x-btn-mc em.x-btn-arrow {
+    padding-left: 2px;
+    background-image: url(../images/menu_arrow_down3.gif);
+}
+
+.x-toolbar-grid-cell-hint.x-btn-over .x-btn-tl, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-tr, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-tc, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-ml, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-mr, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-mc, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-bl, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-br, .x-toolbar-grid-cell-hint.x-btn-over .x-btn-bc {
+    background-position:500px 500px !important;
+}
+
+.x-more-combo .x-combo-list-inner {
+    background-color: #B6C8D5;
+}
+
+.x-more-combo .x-combo-list-item {
+    background-color: #B6C8D5;
+    border: none;
+    padding-left: 4px;
+    /*cursor: default;*/
+}
+
+.x-more-combo .x-combo-list-item em {
+    color:#4D92B3;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.x-more-combo.x-more-combo-list-editable .x-combo-list-item {
+    color: #4D92B3 !important;
+}
+
+.x-more-combo .x-combo-list-item.x-combo-selected {
+    border: none !important;
+}
+
+.x-more-combo.x-column-actions .x-combo-list-item.x-combo-selected {
+    background: url(/images/menu_arrow_down3.gif) no-repeat scroll right center #B6C8D5;
+}
+
+.x-more-combo.x-more-combo-list-editable .x-combo-list-item.x-combo-selected {
+    text-decoration: underline;
+}
+/* end more combo */
+
+/* --- bgn partial check --- */
+input.x-tree-node-tristate-cb {
+    height: 13px;
+    width: 16px;
+    /* --- hide input checkbox --- */
+    filter: alpha(opacity = 0.0); /* Internet Explorer       */
+    -moz-opacity: 0.0; /* Mozilla 1.6 and below   */
+    opacity: 0.0; /* newer Mozilla and CSS-3 */
+    outline: 0;
+}
+
+.x-tree-node-tristate-cb-wrap {
+    position: relative;
+    background: url('/images/checkbox-tree.png') no-repeat -2px -2px;
+    width: 16px;
+    height: 13px;
+    margin: 3px;
+}
+
+.access_domain_viewer .x-tree-node-tristate-cb-wrap {
+    position: relative;
+    background: url('/images/disable.gif') no-repeat 0px -2px;
+    width: 16px;
+    height: 13px;
+    margin: 3px;
+}
+
+.enable_disable_app_viewer .x-tree-node-tristate-cb-wrap {
+    position: relative;
+    background: url('/images/enable.gif') no-repeat 0px -2px;
+    width: 16px;
+    height: 13px;
+    margin: 3px;
+}
+
+.ext-ie .x-pan-treegrid .x-tree-node-tristate-cb-wrap {
+    padding-top: 8px;
+}
+
+.ext-ie10 .x-pan-treegrid .x-tree-node-tristate-cb-wrap {
+    padding-top: 0px !important;
+}
+
+.ext-ie .x-pan-treegrid .x-tree-arrows .x-tree-elbow-minus{
+    background-position: -16px -2px;
+}
+
+.x-pan-treegrid-imgcls {
+   vertical-align: middle;
+}
+
+.hide-x-tree-lines {
+    white-space: normal;
+}
+.ext-webkit .x-tree-node-tristate-cb-wrap {
+    padding-bottom: 1px;
+}
+.x-tree-node-tristate-cb-full-checked, .x-tree-node-tristate-cb-all-children-selected, .x-tree-node-tristate-cb-selected {
+    background-position: -20px -2px;
+}
+
+.x-tree-node-tristate-cb-partial-checked, .x-tree-node-tristate-cb-some-children-selected {
+    background-position: -38px -2px;
+}
+
+.access_domain_viewer .x-tree-node-tristate-cb-full-checked, .access_domain_viewer .x-tree-node-tristate-cb-selected {
+    background: url('/images/enable.gif') no-repeat 0px -2px;
+}
+
+.enable_disable_app_viewer .x-tree-node-tristate-cb-full-checked, .enable_disable_app_viewer .x-tree-node-tristate-cb-selected {
+    background: url('/images/disable.gif') no-repeat 0px -2px;
+}
+
+.access_domain_viewer .x-tree-node-tristate-cb-partial-checked, .access_domain_viewer .x-tree-node-tristate-cb-all-children-selected, .access_domain_viewer .x-tree-node-tristate-cb-some-children-selected {
+    background: url('/images/read_only.gif') no-repeat 0px -2px;
+}
+
+.enable_disable_app_viewer .x-tree-node-tristate-cb-partial-checked, .enable_disable_app_viewer .x-tree-node-tristate-cb-all-children-selected, .enable_disable_app_viewer .x-tree-node-tristate-cb-some-children-selected {
+    background: url('/images/read_only.gif') no-repeat 0px -2px;
+}
+
+/* --- end partial check --- */
+
+/* --- bgn template field background color when disabled/masked */
+.x-item-disabled.x-protect-background * {
+    background-color: #c9d6a6 !important;
+}
+
+.x-item-disabled.x-protect-background {
+    background-color: #c9d6a6 !important;
+}
+
+.x-protect-mask .ext-el-mask {
+    background-color: #c9d6a6 !important;
+}
+
+/* the following is the ring around the window for from panorama */
+.x-protect .x-window-tc {
+    background-image: url(../images/template_ro_window_top-bottom.png) !important;
+}
+
+.x-protect .x-window-bc {
+    background-image: url(../images/template_ro_window_top-bottom.png) !important;
+}
+
+.x-protect .x-window-ml {
+    background-image: url(../images/template_ro_window_left-right.png) !important;
+}
+
+.x-protect .x-window-mr {
+    background-image: url(../images/template_ro_window_left-right.png) !important;
+}
+
+.x-protect .x-window-tl {
+    background-image: url(../images/template_ro_window_left-corners.png) !important;
+}
+
+.x-protect .x-window-bl {
+    background-image: url(../images/template_ro_window_left-corners.png) !important;
+}
+
+.x-protect .x-window-tr {
+    background-image: url(../images/template_ro_window_right-corners.png) !important;
+}
+
+.x-protect .x-window-br {
+    background-image: url(../images/template_ro_window_right-corners.png) !important;
+}
+
+/* --- end template field background color when disabled/masked */
+
+.x-window-dlg .x-window-body {
+    overflow:auto !important;
+}
+
+.x-item-disabled * {
+    color: #555 !important;
+}
+
+.x-item-disabled {
+    color: #555 !important;
+}
+
+.x-cursor-pointer {
+    cursor: pointer;
+}
+
+.pan_widget .x-list-body dt {
+    cursor: default;
+}
+
+.x-grid3-body .x-grid3-td-numberer {
+    background-image: none !important;
+}
+
+.x-tool-refresh {
+    width: 16px;
+    height: 16px;
+    background-position:0 0;
+    background-image: url(../images/refresh_new.png) !important;
+}
+
+.x-tool-loading, .x-tool-corr_loading {
+    background: transparent url(/images/loading_in_progress.gif) no-repeat scroll 0 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: 24px;
+    height: 16px;
+}
+
+.x-window-header .x-tool-loading, .x-window-header .x-tool-corr_loading {
+    background: transparent url(/images/loading_in_progress_dark.gif) no-repeat scroll 0 0;
+}
+
+.x-toolbar-mainframe .icon-refresh-new {
+    /* the following will compensate for the width of the x-tool-loading icon */
+    width: 22px !important;
+}
+
+.x-form-item-label-help {
+    padding-left: 12px;
+    right: 0;
+    top: 5px;
+    background: transparent url(/images/field_label_help.png) no-repeat scroll 0 0;
+    z-index: 50000;
+    position: absolute;
+}
+
+/*.x-form-item-label-help {
+    padding-left:12px;
+    background: transparent url(/images/field_label_help.png) no-repeat scroll 0;
+}*/
+
+/*
+/* ACTION-BTN
+.x-btn-text-icon .x-action-btn .x-btn-text {
+    padding-left:14px;
+}
+*/
+
+/* pan.base.msg() dialog */
+#pan-base-msg-div {
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 250px;
+    z-index: 20000;
+}
+
+.x-form-item-label {
+    text-align: right !important;
+}
+
+.x-form-required {
+    background: #ffffd3 !important;
+    border: 1px solid #c2c3c3 !important;
+}
+
+.x-grid3-scroller.x-form-required {
+    border: none !important;
+}
+
+/* bgn tab validation */
+.x-tab-strip span.x-tab-strip-text.x-form-required {
+    border: none !important;
+    background: repeat-x bottom !important;
+    background-color: transparent !important;
+    background-image: url(paloaltothemes/images/paloalto/form/invalid-field.png?__version=1435943003) !important;
+}
+
+.x-tab-strip span.x-tab-strip-text.x-form-invalid {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.x-tab-strip .x-btn {
+    border: 1px solid #51606b;
+    border-bottom: none !important;
+    margin-left: 2px;
+    border-radius: 5px 5px 0 0;
+}
+
+.ext-webkit .x-tab-strip .x-btn {
+    margin-top: 0px;
+    margin-bottom: -1px;
+}
+.ext-gecko .x-tab-strip .x-btn {
+    margin-top: 1px;
+    margin-bottom: -2px;
+}
+/* end tab validation */
+
+.ext-webkit .x-form-invalid {
+    border: 1px solid #c2c3c3;
+}
+
+.i18n-lookup-failed-label {
+    color: red;
+    font-weight: bold;
+}
+
+.x-form-checkbox {
+/*    margin:4px 0;*/
+}
+
+/* this is needed because when the grid editor has a checkbox in its tbar (file blocking viewer), the checkbox was white */
+.x-editor .x-toolbar-cell .x-form-check-wrap {
+    background: transparent;
+}
+
+.x-tbar-page-noborder.green.x-toolbar.x-small-editor.x-toolbar-layout-ct, .x-tbar-page-noborder.blue.x-toolbar.x-small-editor.x-toolbar-layout-ct {
+    border-width: 0px;
+}
+
+/* this is used in Pan.base.grid.GridPanel for spanning cells */
+.x-grid3-mini-cell {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.x-grid3-row {
+    min-height: 19px;
+    height: expression(this.scrollHeight < 19 ? "19px" : "auto");
+}
+
+.x-grid3-row td, .x-grid3-summary-row td {
+    line-height: 11px !important;
+}
+
+.blend .x-grid3-row td {
+    line-height: 9px !important;
+}
+
+.blend .x-grid3-row {
+     min-height: 17px;
+}
+/* this is for wrapping text in columns */
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+    white-space: normal !important;
+}
+
+.x-grid3-cell.x-grid-cell-nowrap .x-grid3-cell-inner {
+    white-space: nowrap !important;
+}
+
+/*.x-grid3-row-selected.no-background{
+    background-color: transparent !important;
+}
+
+.x-grid3-row-selected.no-background .x-grid3-td-checker{
+    background-image: none !important;
+}*/
+
+.no-background .x-grid3-row-selected{
+    background-color: transparent !important;
+}
+
+.no-background .x-grid3-row-selected .x-grid3-td-checker,
+.no-background .x-grid3-row-selected-checker-highlight .x-grid3-td-checker{
+    background-image: none !important;
+}
+
+.no-background .x-grid3-td-checker{
+    width: 17px !important;
+}
+
+.no-background.x-grid-panel {
+    border-width: 0;
+}
+
+.no-background .x-grid3 {
+   background-color: transparent !important;
+}
+.no-background .x-grid3-row, .no-background .x-grid3-row-over {
+   background-color: transparent !important;
+}
+.no-background .x-grid3-row td{
+   color: black
+}
+
+.x-grid3-row-selected .x-grid3-row-checker, .x-grid3-row-checked .x-grid3-row-checker,
+.x-grid3-row-selected-checker-highlight .x-grid3-row-checker {
+    background-position: -75px 2px;
+}
+
+.x-grid3-hd-checker-on .x-grid3-hd-checker {
+    background-position: -75px 1px;
+}
+
+.ext-border-box .x-grid3-hd-checker-on .x-grid3-hd-checker {
+    background-position: -75px 3px;
+}
+
+.x-grid3-wide-checker .x-grid3-row-selected .x-grid3-row-checker, .x-grid3-wide-checker .x-grid3-hd-checker-on .x-grid3-hd-checker, .x-grid3-wide-checker .x-grid3-row-checked .x-grid3-row-checker,
+.x-grid3-wide-checker .x-grid3-row-selected-checker-highlight .x-grid3-row-checker {
+    background-position: -66px 2px;
+}
+
+.x-grid3-wide-checker .x-grid3-row-checker, .x-grid3-wide-checker .x-grid3-hd-checker {
+    background-position: 11px 2px;
+}
+
+.x-grid3-row-checker, .x-grid3-hd-checker {
+    background-image: url(/images/row-check-sprite.gif);
+}
+
+.no-background .x-grid3-row-checker, .pan-grid-checker .x-grid3-row-checker {
+    background-image: url(paloaltothemes/images/paloalto/form/checkbox.png?__version=1435943003);
+    background-position: 0 0;
+}
+
+.no-background .x-grid3-row-over .x-grid3-row-checker, .pan-grid-checker .x-grid3-row-over .x-grid3-row-checker{
+    background-position: -18px 0;
+}
+
+.no-background .x-grid3-row-selected .x-grid3-row-checker,
+.pan-grid-checker .x-grid3-row-selected .x-grid3-row-checker,
+.no-background .x-grid3-row-selected-checker-highlight .x-grid3-row-checker {
+    background-position: 0 -18px !important;
+}
+
+.ext-gecko .x-grid3-cell.x-grid-cell-nowrap .x-grid3-cell-inner {
+    -moz-binding: url('/js/3rdParty/ellipsis.xml#ellipsis');
+}
+
+/* this is for wrapping text in columns */
+.x-live-grid-panel .x-grid3-cell-inner {
+    white-space: nowrap !important;
+    padding: 5px 2px 1px 3px !important; /* must agree with Pan.base.Constants.liveGridMiniRowHeight */
+}
+
+/*.x-grid3-cell-inner.tag-cell {*/
+    /*padding: 5px 2px 3px 3px !important;*/
+/*}*/
+
+.x-grid-empty, .x-form-empty-field {
+    color: #98a9b4 !important;
+}
+
+.x-grid-empty-add-new {
+    padding: 1px 0 0 0;
+    text-decoration: underline;
+    font: italic 8px tahoma, helvetica, arial, sans-serif !important;
+    cursor: pointer;
+}
+
+.x-grid-panel {
+    border-width: 1px;
+}
+
+.x-pan-grid-viewer {
+    border-width: 0px;
+}
+
+.x-grid-viewer .x-tip-ml, .x-grid-viewer .x-tip-mr {
+    background: none;
+    padding: 0px;
+}
+
+.x-grid-viewer .x-tip-bl, .x-grid-viewer .x-tip-tl {
+    display: none;
+}
+
+.x-grid3-hd-over-show-complete-info {
+    background: url(/images/comments.gif) no-repeat 0 0 !important;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+}
+
+.x-grid3-hd-over .x-grid3-hd-over-show-complete-info {
+    display: block;
+}
+
+/* This is needed to have column header group work with check box selection model*/
+.ux-grid-hd-group-cell .x-grid3-hd-checker {
+    background-image: none;
+}
+
+td.cell-invalid {
+    /*
+        border: 1px solid;
+        border-color:#c30;
+    */
+    background: repeat-x bottom;
+    background-image: url(/js/3rdParty/ext/resources/images/default/grid/invalid_line.gif);
+}
+
+.x-portal-column.x-first-column {
+    padding-left: 10px !important;
+}
+
+.x-portal-column.x-last-column {
+    margin-right: 10px;
+    padding-right: 0px;
+}
+
+.x-portal-column {
+    padding: 7px 7px 0 0;
+}
+.x-portal-column .x-pan-grid-viewer {
+    margin-bottom:9px;
+}
+.x-portal-column .x-pan-grid-viewer .x-panel-bbar .x-toolbar {
+    border: 1px solid #C1C7CB;
+    -moz-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.x-portal-column .x-pan-grid-viewer .x-panel-header{
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+.x-no-padding {
+    padding: 0 !important;
+}
+
+.x-tab-panel-body {
+    padding: 8px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-top: 0 none !important;
+}
+
+.ux-grid3-disabled-row {
+    background: #BDBDBD;
+}
+
+.x-grid3-td-disabled-checker {
+    background-image: url(/images/s.gif);
+}
+
+.x-toolbar-grid-cell-hint {
+    background: transparent !important;
+    background-image: none !important;
+    border-style: none !important;
+}
+.x-toolbar-grid-cell-hint.ellipsis-menu {
+    z-index:90000 !important;
+}
+.x-toolbar-local-paging {
+    background-image: none !important;
+    border-width: 0 !important;
+}
+
+.x-grid3-body .x-grid3-check-col-td .x-grid3-cell-inner {
+    padding-left: 5px !important;
+}
+
+.x-grid3-check-col {
+    background-image:url('/images/checkbox-green.png') !important;
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.x-grid3-check-col-on {
+    background-image:url('/images/checkbox-green.png') !important;
+    background-position: 0 -18px;
+    width: 16px;
+    height: 16px;
+}
+
+.x-grid3-check-red-col {
+    background-image:url('/images/check-red.png') !important;
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.x-grid3-check-red-col-on {
+    background-image:url('/images/check-red.png') !important;
+    background-position: 0 -18px;
+    width: 16px;
+    height: 16px;
+}
+
+.x-grid3-check-orange-col-on {
+    background-image:url('/images/check-orange.png') !important;
+    background-position: 0 -18px;
+    width: 16px;
+    height: 16px;
+}
+
+
+.x-grid3-check-col-nonediting {
+/*	background-image:url('/images/checkbox-green.png') !important;
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;*/
+    filter: alpha(opacity = 20); /* Internet Explorer       */
+    -moz-opacity: 0.20; /* Mozilla 1.6 and below   */
+    opacity: 0.20; /* newer Mozilla and CSS-3 */
+}
+
+.x-grid3-check-col-on-nonediting {
+/*	background-image:url('/images/checkbox-green.png') !important;
+    background-position: 0 -18px;
+    width: 16px;
+    height: 16px;*/
+    filter: alpha(opacity = 50); /* Internet Explorer       */
+    -moz-opacity: 0.50; /* Mozilla 1.6 and below   */
+    opacity: 0.50; /* newer Mozilla and CSS-3 */
+}
+
+.x-tree-node-collapsed .x-tree-node-icon, .x-tree-node-expanded .x-tree-node-icon, .x-tree-node-leaf .x-tree-node-icon {
+    height: 16px;
+}
+
+.app-item .x-tree-icon {
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.x-combo-list-hd {
+    height: 21px;
+    background-color: #a7b28a;
+    background-image: url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003);
+}
+
+.status-text-warning {
+    color: red;
+}
+
+.globalprotect-ticket {
+    color: #036DDA;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border: 1px dotted #8bc5ef;
+}
+
+.noboarder-container.x-panel .x-panel-mc {
+    padding: 0;
+}
+
+.noboarder-container.x-panel .x-panel-ml {
+    padding: 0;
+}
+
+.noboarder-container.x-panel .x-panel-mr {
+    padding: 0;
+}
+
+.noboarder-container.x-panel .x-panel-bc {
+    height: 0;
+}
+
+/*---------------------------window----------------------------------------------------*/
+.x-window-tl .x-panel-icon {
+    padding-left: 2px !important;
+}
+
+/* ------------------------------- debug tool --------------------------------------------- */
+.CodeMirror {
+    height: 100%; /* znw */
+}
+
+.x-panel-body-debug-tool .x-window-mc {
+/*background: transparent !important;*/
+    background-color: #e6e6e6; /* the background          */
+    filter: alpha(opacity = 95); /* Internet Explorer       */
+    -moz-opacity: 0.95; /* Mozilla 1.6 and below   */
+    opacity: 0.95; /* newer Mozilla and CSS-3 */
+}
+
+.x-tool-unminimize {
+    background-position: 0 -45px;
+}
+
+.x-tool-unminimize-over {
+    background-position: -15px -45px;
+}
+
+.x-window-maximized .x-window-ml {
+    padding-left: 6px;
+}
+
+.x-window-maximized .x-window-mr {
+    padding-right: 6px;
+}
+
+/* ------------------------------- bgn template ----------------------------------- */
+.x-tool-hastemplateindication {
+    width: 16px;
+    height: 16px;
+    background: url(/images/from_template.png) no-repeat scroll 0 0;
+}
+
+.x-tool-hasoverrideindication {
+    width: 16px;
+    height: 16px;
+    background: url(/images/overridden_template.png) no-repeat scroll 0 0;
+}
+
+.x-tool-hasnooverrideindication {
+    width: 16px;
+    height: 16px;
+    background: url(/images/from_template.png) no-repeat scroll 0 0;
+}
+
+.x-tool-overrideindication {
+    width: 16px;
+    height: 16px;
+    background: url(paloaltothemes/images/paloalto/panel/tool-sprites.png?__version=1435943003) no-repeat scroll 0 0;
+    background-position:0 -90px;
+}
+
+.x-tool-overrideindication-over {
+    background-position:-15px -90px;
+}
+
+/* x symbol */
+.x-indicate-remove {
+    width: 16px;
+    height: 16px;
+    background: url(/images/template_field_remove_value.png) no-repeat scroll 0 0 !important;
+    /*background: url(/images/overridden_template.png) no-repeat scroll 0 0 !important;*/
+    cursor: pointer;
+}
+
+/* single cog */
+.x-tool-revertindication, .x-indicate-from-template ,.x-indicate-revert-action, .x-indicate-from-parentDG {
+    width: 16px;
+    height: 16px;
+    background: url(/images/from_template_12x12.png) no-repeat scroll 0 0 !important;
+    cursor: pointer;
+}
+
+/* double cog */
+.x-indicate-overridden-template, .x-indicate-override-action, .x-indicate-overridden-dg {
+    width: 16px;
+    height: 16px;
+    background: url(/images/overridden_template_12x12.png) no-repeat scroll 0 0 !important;
+    cursor: pointer;
+}
+
+/* below is to workaround firefox bug */
+.ext-gecko .x-live-grid-panel .x-indicate-from-parentDG, .ext-gecko .x-live-grid-panel .x-indicate-overridden-dg {
+    margin-top: -12px;
+}
+
+/* ------------------------------- end template ----------------------------------- */
+
+.x-grid3-body .x-grid3-td-checker1 .x-grid3-cell-inner, .x-grid3-header .x-grid3-td-checker1 .x-grid3-hd-inner {
+    height:100%;
+    padding:0 !important;
+}
+
+/* ------------------------------- filter grid cell --------------------------------------- */
+a.grid-filter {
+    color: black;
+    text-decoration: none;
+}
+
+a.grid-filter:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.x-container-with-fieldset-h-padding {
+    padding-left: 14px;
+    padding-right: 11px;
+}
+
+.x-container-with-fieldset-v-padding {
+    padding-top: 24px;
+    padding-bottom: 11px;
+}
+
+/* make top of checkbox/tools visible in webkit */
+.ext-webkit .x-fieldset-header {
+    padding-top: 2px;
+}
+.ext-safari .x-fieldset-header {
+    padding-top: 1px !important;
+}
+
+.ext-ie .x-fieldset-noborder legend span {
+    position: relative;
+    left:0px;
+}
+
+.ext-ie .x-fieldset-noborder legend {
+    margin-bottom:10px;
+}
+
+.ext-ie10 .x-fieldset legend.x-fieldset-header {
+    padding-top: 1px;
+}
+
+/*--------------------------Fieldsets that need to show up like plain container-----------------*/
+.x-containerlike-fieldset {
+    border: 0px none transparent;
+    padding: 0px;
+    margin-bottom: 2px;
+    display: block; /* preserve margins in IE */
+}
+
+.ext-ie .x-containerlike-fieldset {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* remove the trigger and the mouse-cursor-hand from groupable-grid-headers */
+.x-grid-group-hd {
+    border-bottom: 2px solid #99bbe8;
+    cursor: default;
+    padding-top: 6px;
+}
+
+.x-grid-group-hd div {
+    background-image: none;
+    padding: 4px 4px 4px 4px;
+    color: #3764a0;
+    font: bold 11px tahoma, arial, helvetica, sans-serif;
+}
+
+/* ------------------------------- Module Specific Specifications ------------------------- */
+
+/* page header */
+.x-pan-pageheader {
+    height: 27px;
+    width: 84px;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+}
+
+#device .x-pan-pageheader {
+    width: 85px;
+}
+
+#panorama .x-pan-pageheader {
+    width: 85px;
+}
+
+.x-pan-pageheader-device-template {
+    width: 84px !important;
+}
+
+.x-pan-pageheader-selected {
+    position: relative;
+    top: -27px;
+}
+.x-pan-pageheader-shadow {
+    position: relative;
+    top: -54;
+}
+
+a.x-pan-pageheader {
+    color: #5e727e;
+}
+
+/* app-browser */
+.x-pan-application {
+    background-image: url(../images/application.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-pan-appfilter {
+    background-image: url(../images/application_filter.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-pan-appgroup {
+    background-image: url(../images/application_group.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-pan-appfunction {
+    background-image: url(../images/app_function.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-pan-customapp {
+    background-image: url(../images/custom_app.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------- x-tool ------------------------- */
+/*.x-tool {height: 16px;}*/
+
+.x-pan-topmost {
+    z-index: 999999 !important;
+}
+
+.x-tool-apply {
+    background-image: url(../images/apply.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-tool-apply-over {
+    background-image: url(../images/apply.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-tool-filter {
+    background-image: url(../images/open_filter.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-tool-filter-over {
+    background-image: url(../images/open_filter.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.x-toolbar-mainframe {
+    background-image: url(../images/topcorner.gif);
+    background-position: -34px -1px;
+    background-repeat: no-repeat;
+    background-color: #80a1b7;
+    border-bottom-color: transparent !important;
+}
+
+/*--------------------------application view-----------------------*/
+.x-toolbar-cell.x-pan-appview-custom-cb {
+    vertical-align: top;
+}
+
+/* --------------------------- tag cloud --------------------------- */
+.x-cloud-list {
+    min-height: 100px;
+    border: 1px solid #CCC;
+    padding: 15px;
+    line-height: 2.5em;
+    width: 50%;
+}
+
+.x-cloud-item {
+    margin: 0 0.2em;
+    display: inline;
+}
+
+.x-cloud-item a {
+    padding: 5px;
+}
+
+.x-cloud-item a:hover {
+    color: #002a85;
+}
+
+.x-cloud-item-selected a {
+    background-color: #316ac5;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.x-cloud-item-selected a:hover {
+    cursor: default;
+    color: #FFF;
+}
+
+.x-cloud-item.smallest {
+    font-size: 0.65em;
+}
+
+.x-cloud-item.small {
+    font-size: 0.85em;
+}
+
+.x-cloud-item.medium {
+    font-size: 1.0em;
+}
+
+.x-cloud-item.large {
+    font-size: 1.35em;
+}
+
+.x-cloud-item.largest {
+    font-size: 2.0em;
+}
+
+/* --------------------------- drag and drop ----------------------- */
+.x-drop-target-active {
+    background-color: #8bc5ef !important;
+}
+
+.x-draggable {
+    cursor: pointer !important;
+}
+
+.x-drop-target-top {
+    border-top: 3px dotted #8bc5ef;
+}
+
+.x-drop-target-bottom {
+    border-bottom: 3px dotted #8bc5ef;
+}
+
+/* --------------------------- policies ---------------------------- */
+.add {
+    background-image: url(/images/add.gif) !important;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+}
+
+.remove {
+    background-image: url(/images/clear.gif) !important;
+    background-position: 2px 2px;
+    background-repeat: no-repeat;
+}
+
+.x-security-name {
+    background-image: url(../images/security.gif) !important;
+}
+
+a.x-menu-item.shorter-menu-item {
+    line-height: 11px;
+    padding-left: 82px;
+}
+
+span.shorter-menu-member-prefix {
+    line-height: 11px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    padding-right: 4px;
+    width: 74px;
+}
+
+/*
+.x-unused-rules {
+    background-color: #D6E4A4;
+    background-image: url(../images/unused-rule-bg.gif);
+    background-repeat: repeat;
+}
+*/
+span.x-toolbar-trigger {
+    width: 20px;
+    background-image: url(../images/menu_arrow_down.gif) !important;
+    background-position: right center;
+}
+
+em.x-hyperlink {
+    color: #036DDA;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/*em.x-hyperlink:hover {*/
+    /*text-decoration: underline;*/
+    /*color: #036DDA;*/
+/*}*/
+
+.pan-link-fieldset-tool {
+    overflow:hidden;
+    color: #036DDA;
+    width:50px;
+    height:19px;
+    cursor:pointer;
+    background:transparent no-repeat;
+    margin-left:0px;
+    text-align: left;
+}
+.pan-link-fieldset.x-fieldset {
+    border:none;
+    padding:5px;
+}
+.pan-link-fieldset-tool.x-tool-toggle-over {
+    text-decoration: underline;
+}
+.x-cell-editable {
+    color: #036DDA;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.x-cell-editable-over {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pan_widget .x-cell-editable-over {
+    text-decoration: none;
+    cursor:default;
+}
+
+/*********** disabled and negate object styles *************/
+span.x-pan-disabled {
+    color: #aaa;
+    font-weight: normal;
+    font-style: italic;
+}
+
+span.x-pan-disabled em {
+    color: #aaa;
+    font-weight: normal;
+    font-style: italic;
+}
+
+span.x-pan-disabled img {
+    opacity: .30;
+    filter: alpha(opacity = 50);
+}
+
+span.x-pan-disabled em:hover {
+    color: #888888; /*text-decoration: none*/
+}
+
+span.x-pan-negate em {
+    text-decoration: line-through;
+}
+
+td.x-pan-disabled {
+    color: #888888;
+}
+
+div.x-pan-disabled {
+    color: #aaa;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*********** panorama object styles *************/
+
+.x-pan-panorama-row.x-grid3-row {
+    background: rgb(244, 248, 236);
+
+}
+
+.x-pan-panorama-row.x-grid3-row-alt {
+    background: rgb(235, 240, 228);
+}
+
+.x-pan-panorama-row .x-hyperlink {
+    color: #888;
+}
+
+.x-grid3-row.x-pan-panorama-last, .x-grid3-row-over.x-pan-panorama-last {
+    border-bottom: 2px solid #b7cF69;
+}
+
+.x-pan-panorama-commit-status-window .x-border-layout-ct .x-panel-nofooter .x-panel-bc {
+    height:0px;
+}
+
+.x-pan-panorama-deployment-status .x-form-display-field, .ext-strict .ext-ie8 .x-pan-panorama-deployment-status .x-form-display-field {
+    padding-top: 0px;
+}
+
+.x-window-header .x-tool-help {
+    background: transparent url(/images/help_blue_15x15.png) no-repeat scroll 0 0;
+}
+
+.x-window-header.x-dlg-icon {
+    padding: 10px;
+}
+
+.x-tool-help-over {
+    background-image: url(/images/help_white-bkgd.png);
+}
+
+.x-tool-help {
+    margin-right: 4px;
+}
+
+.x-window-header .x-tool-receivednotification {
+    background: transparent url(/images/warning.gif) no-repeat scroll 0 0;
+}
+
+.x-toggle-slide-container label {
+    text-transform: capitalize;
+}
+
+.ext-webkit .x-toggle-slide-container label, .ext-ie .x-toggle-slide-container label {
+    padding-right: 4px;
+    padding-top: 2px;
+    font-size: 11px;
+}
+.x-toolbar-mainframe div.xtb-text.vsyslabel {
+    padding-left: 5px !important;
+}
+
+.x-toolbar-mainframe div.xtb-text.xtb-text-context {
+    padding-left: 10px !important;
+}
+
+.x-toolbar-mainframe div.xtb-text, .x-toolbar-mainframe label.x-form-cb-label{
+    padding: 0 2px 2px;
+    color: #fff;
+}
+
+.ext-ie7 .x-toolbar-mainframe div.xtb-text {
+    padding: 2px 2px 0;
+}
+
+/*--------------------------- Device ---------------------------*/
+.rolebase-admin-profile-container h3 {
+    padding-left: 16px;
+    font: normal 11px verdana, helvetica, tahoma, sans-serif;
+    height: 18px;
+    cursor: pointer;
+}
+
+.state-enable {
+    background: #fff url(/images/enable.gif) no-repeat 0px -1px;
+}
+
+.state-disable {
+    background: #fff url(/images/disable.gif) no-repeat 0px -1px;
+}
+
+.state-read-only {
+    background: #fff url(/images/read_only.gif) no-repeat 0px -1px;
+}
+
+.rolebase-admin-profile-header {
+    padding-left: 16px;
+    font: normal 11px verdana, helvetica, tahoma, sans-serif;
+    height: 18px;
+    cursor: pointer;
+}
+
+.rolebase-admin-profile-body {
+    margin-left: 16px;
+    font: normal 11px verdana, helvetica, tahoma, sans-serif;
+}
+
+.rolebase-admin-profile-content {
+    height: 18px;
+    min-height: 18px;
+    padding-left: 16px;
+    cursor: pointer;
+    font: normal 11px verdana, helvetica, tahoma, sans-serif;
+}
+
+.icon-checkbox {
+    cursor: pointer;
+}
+
+/*--------------------------- Monitor ---------------------------*/
+a.reportViewer {
+    text-decoration: none;
+}
+
+a.reportViewer:hover {
+    text-decoration: underline;
+}
+
+a.log {
+    color: black;
+    text-decoration: none;
+}
+
+a.log:hover {
+    color: #4d92b3;
+    text-decoration: underline;
+}
+
+/* summary scope */
+.chart-box {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.small-chart-box-container {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 360px;
+    float: left;
+}
+
+.small-chart-box {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #A4BCCF;
+    border-left: 1px solid #A4BCCF;
+    border-right: 1px solid #A4BCCF;
+}
+
+.small-chart-box-title {
+    background-color: #C9DAEA;
+    color: #1D5677;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #A4BCCF;
+    padding: 3px 4px 3px 4px;
+
+    background: rgb(242,245,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+    background: linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+
+    /* IE10 */
+    /*background-image: -ms-linear-gradient(top, #F6F6F6 0%, #B2C4D7 100%);*/
+    /* Mozilla Firefox */
+    /*background-image: -moz-linear-gradient(top, #F6F6F6 0%, #B2C4D7 100%);*/
+    /* Opera */
+    /*background-image: -o-linear-gradient(top, #F6F6F6 0%, #B2C4D7 100%);*/
+    /* Webkit (Safari/Chrome 10) */
+    /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F6F6F6), color-stop(1, #B2C4D7));*/
+    /* Webkit (Chrome 11+) */
+    /*background-image: -webkit-linear-gradient(top, #F6F6F6 0%, #B2C4D7 100%);*/
+    /* Proposed W3C Markup */
+    /*background-image: linear-gradient(top, #F6F6F6 0%, #B2C4D7 100%);*/
+}
+
+/* report groups */
+.report-group-tree {
+    float: left;
+    border: 1px solid #c3daf9;
+    //width: 280px;
+    background: #fff;
+    //height: 350px;
+    overflow: auto;
+}
+
+.report-group-tree * {
+    overflow: hidden;
+}
+
+.report-group-folder .x-tree-node-icon {
+    background: transparent url(/js/3rdParty/ext/resources/images/default/tree/folder.gif);
+}
+
+.report-group-log {
+    background-image: url(/images/data_filter_logs.gif) !important;
+}
+
+.report-group-report {
+    background-image: url(/images/report.gif) !important;
+}
+
+.report-group-pdf {
+    background-image: url(/images/PDF_summary_report.gif) !important;
+}
+
+.report-group-log-folder {
+    background-image: url(/images/log_group.gif) !important;
+}
+
+.report-group-report-folder {
+    background-image: url(/images/report_group.gif) !important;
+}
+
+.report-group-pdf-folder {
+    background-image: url(/images/PDF_report_group.gif) !important;
+}
+
+/*--------------------------- Main frame ---------------------------*/
+
+.pan-mainframe-ct.x-border-layout-ct {
+    background-color: #316989;
+    background-image: none;
+}
+
+#footerPanel {
+    border: 0 none !important;
+    background: #80a1b7 url(/images/bottomcorner.gif) no-repeat scroll -34px -8px;
+    margin-bottom: 10px;
+}
+
+#footerPanel .xtb-text {
+    color: #fff; /*font-weight: bold;*/
+}
+
+#footerPanel .x-btn button {
+    color: #fff !important;
+}
+
+#footerPanel a:link {
+    color: #fff !important;
+}
+
+.x-toolbar-mainframe div.xtb-text.xtb-text-context, .x-toolbar-mainframe .x-btn button {
+    color: #fff;
+}
+
+.x-form-radio-group.x-column-layout-ct .x-column {
+    margin-top: -3px;
+}
+
+.x-form-item div.x-pan-toggle-slide {
+    margin-bottom: -4px;
+}
+
+.x-displayfield-like-text {
+    background: transparent !important;
+    border: 0px none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    overflow-y: auto;
+}
+.ext-strict .x-displayfield-like-text.x-form-text {
+    height:19px;
+}
+.x-grid-group-hd div.x-grid-group-title, .x-grid-group-collapsed .x-grid-group-hd div.x-grid-group-title {
+    background-image: none;
+}
+
+.x-grid-group-expand-collapse-icon {
+    background: transparent url(/styles/paloaltothemes/images/paloalto/tree/arrows.gif?__version=1435943003) no-repeat -18px 0;
+    vertical-align: bottom !important;
+    padding: 7px 7px 6px;
+}
+
+.x-grid-group-collapsed .x-grid-group-hd .x-grid-group-expand-collapse-icon {
+    background: transparent url(/styles/paloaltothemes/images/paloalto/tree/arrows.gif?__version=1435943003) no-repeat -2px 0;
+}
+
+.x-grid-group-hd div.x-grid-group-title {
+    padding-left: 4px;
+}
+
+#manageCustomReportTabPanel ul.x-tab-strip-top {
+    background: #ebedee;
+    border-color: #888;
+}
+
+.x-mask-loading div {
+    background-image: url(../images/progress.gif);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.ext-el-mask-msg.x-mask-loading-no-img {
+    display: none;
+}
+
+/* custom logo dialog - needed to customize to align the file upload field icon and the other icons */
+.customize-logo-btn.x-btn-icon {
+    top: 0 !important;
+}
+
+.x-form-file-wrap .x-form-file-btn.plain-btn {
+    right: -1px;
+}
+
+.x-form-file-wrap .x-form-file  {
+    cursor: pointer;
+}
+
+.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.dashboard_risk {
+    min-height: 32px;
+    color: #5A6E7A;
+    padding: 0px;
+}
+
+.dashboard_risk_left {
+    padding: 10px 0px 4px 0px;
+}
+
+.dashboard_risk_middle {
+    padding: 5px;
+}
+
+.dashboard_risk_right {
+    padding: 0px 0px 8px 5px;
+    border-left: 1px solid #C6CCD0;
+    color: #CB6B04;
+}
+
+.dashboard_risk_right .risk_value {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+div.js_treemap {
+    margin-bottom: 4px;
+    font-family: Lucida Grande, Lucida Sans Unicode, Tahoma, Arial, sans serif;
+}
+
+div.js_treemap div.node {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+div.js_treemap a.textnode {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/treemap/textnode-border.gif);
+    display: block;
+    float: left;
+    color: #fff;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+div.js_treemap a.textnode:hover {
+    background-image: url(/images/treemap/textnode-border-hover.gif);
+}
+
+div.js_treemap a.proper {
+    background-color: #DE9949;
+}
+
+div.js_treemap a.textnode img {
+    vertical-align: middle;
+    border: none;
+}
+.x-list-wrap.pan_widget {
+    border: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.dashboard_widget, .pan_widget {
+    background-color: #FFF;
+    border: 1px solid #C1C7CB;
+    padding: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* enable selection for pan_widget */
+/* not enabling for all grids because policy grid does not work on account of drag & drop */
+.x-grid3-row .x-grid-selectable, .x-grid3-summary-row .x-grid-selectable, .x-list-body dt .x-grid-selectable {
+    -moz-user-select: text !important;
+    -khtml-user-select: text !important;
+    -webkit-user-select:text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+}
+
+.pan_widget .x-grid3-row td, .pan_widget .x-grid3-summary-row td {
+    vertical-align: middle;
+}
+
+.pan-propertygrid-with-bbar .x-panel-bbar {
+    padding-bottom:3px;
+}
+
+.pan-propertygrid-with-bbar .pan_widget {
+    border-radius: 0px 0px 0px 0px;
+    border-bottom-width: 0px;
+    padding-bottom:2px;
+    margin-bottom: 0px !important;
+}
+
+.pan-leftright-trigger-wrap {
+    border: 1px solid;
+    padding: 0px 3px;
+}
+
+.pan-leftright-trigger-wrap label {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pan-breadcrumb.x-toolbar div.xtb-text, .pan-breadcrumb .crumb-separator.x-btn button {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pan-breadcrumb .crumb-separator.x-btn button  {
+    margin: -4px -5px 0px;
+    cursor: auto;
+}
+
+.pan-breadcrumb .x-btn a, .pan-breadcrumb .x-btn button {
+    margin-top: -4px;
+}
+
+.dashboard_widget table.log {
+    width: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.dashboard_widget table.clickable {
+    cursor: pointer;
+}
+
+.dashboard_widget label, .dashboard_widget .label, .dashboard_widget table.log th, .firstlevel.label {
+    padding: 3px 4px 3px 4px;
+    background-color: transparent;
+    background-image: none;
+    color: #798993;
+    text-align: right;
+}
+
+.dashboard_widget table.log th {
+    border-bottom: 1px solid #DBDBDB;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.dashboard_widget table.log td {
+    padding: 3px 4px 3px 4px;
+    color: #5A6E7A;
+    background: #FFFFFF;
+    vertical-align: top;
+    text-align: left;
+}
+
+/* ACC Refresh */
+.circle {
+    border: 2px solid #a1a1a1;
+    margin-top: 2px;
+    padding: 8px 8px;
+    background: green;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 2px;
+    width: 1%;
+}
+
+/* ACC */
+/*
+.x-grid3-body .x-grid3-td-numberer {
+    background-image:url(/images/s.gif);
+}
+*/
+
+/*
+#accdata {
+    overflow: scroll;
+}
+*/
+.acc_widget .x-panel-body {
+    border-radius: 0px 0px 5px 5px;
+}
+.acc_widget .x-panel-header {
+    border-radius: 5px 5px 0px 0px;
+}
+.acc-content-panel {
+    border-color: #ccd2d5;
+    background-color: #EFF1F2;
+}
+
+a.reportViewer {
+    text-decoration: none;
+}
+
+a.reportViewer:hover {
+    text-decoration: underline;
+}
+
+a.log {
+    color: black;
+    text-decoration: none;
+}
+
+a.log:hover {
+    color: #4d92b3;
+    text-decoration: underline;
+}
+
+.ext-safari .x-date-picker {
+    width: 185px;
+}
+
+.ext-strict .ext-safari .x-small-editor .x-form-text {
+    height: 18px !important;
+}
+
+.ext-safari .x-form-field-wrap .x-form-trigger {
+    position: static;
+    top: auto;
+    vertical-align: top;
+}
+
+/* fix for IE7 div center */
+div.center_bloc_container {
+    text-align: center;
+}
+
+.center_bloc {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto; /*width: auto;*/
+    width: 850px;
+    margin-bottom: 20px;
+    border: 2px solid #C6CCD0;
+}
+
+.center_table {
+    background: #FFF none repeat scroll 0px 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.table_header {
+    background-color: #7EA1B5;
+    border-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.row_header {
+    height: 35px;
+    margin: 0px;
+    background-color: #DFE7EF;
+    border-bottom: solid 2px #DDDDDD;
+}
+
+.row_header h2 {
+    color: #CB6B04;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.table_header h2 {
+    color: white;
+    font-size: 10px;
+    padding-top: 5px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+h2 {
+        margin: 1px 10px 1px 0px;
+}
+
+.rfbig {
+    font-size: 30px;
+}
+
+#riskfactor td {
+    background-image: none;
+}
+
+/*
+.x-grid-panel {
+        border-width: 0px;
+}
+
+.x-grid3-cell-first {
+        background-image: none;
+}
+*/
+
+td.retro {
+    font-weight: normal;
+    padding: 3px 5px 5px 4px;
+    color: #5A6E7A;
+}
+
+.filter_title {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #cb6b04;
+    font-size: 12px;
+    background-color: #FFFFFF;
+}
+
+.filter_container {
+    border: 2px solid #C6CCD0;
+    padding: 0px;
+    border-collapse: collapse;
+    background-color: #DFE7EF;
+    margin-left: 5px;
+    float: left;
+    display: inline;
+}
+
+.filter_name {
+    background-color: #2D6A86;
+    padding: 1px 4px 1px 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Trebuchet MS, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.filter_value {
+    color: #006594;
+    font-family: Trebuchet MS, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0px 5px;
+    vertical-align: middle;
+
+}
+
+.filter_remove {
+    display: block;
+    padding-top: 1px;
+    padding-right: 2px;
+}
+
+* html .filter_container {
+    float: none;
+    border: 2px solid #C6CCD0;
+    padding: 0px;
+    border-collapse: collapse;
+
+}
+
+.config_audit_list_item {
+    font:normal 11px tahoma, arial, helvetica, sans-serif;
+    padding:3px 10px 3px 10px;
+    /*border:1px solid #fff;*/
+    /*border-bottom:1px solid #eeeeee;*/
+    /*white-space:normal;*/
+    /*color:#555;*/
+}
+
+/*Please do not move this class to any other file or change the structure of this class i.e. background-image has to be the first property, as it is used for custom logo feature */
+body {
+    /*background-image:url(/images/login-page.gif);*/
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-color: #F2F6FA;
+    margin: 0px;
+}
+
+.x-window-dlg .ext-mb-info {
+    background:transparent url(../images/dialog_info.png) no-repeat top left;
+}
+.x-window-dlg .ext-mb-warning {
+    background:transparent url(../images/dialog_warning.png) no-repeat top left;
+}
+.x-window-dlg .ext-mb-question{
+    background:transparent url(../images/dialog_confirm.png) no-repeat top left;
+}
+
+.pan-msg-dlg .ext-mb-question {
+    background:transparent url(../images/dialog_confirm.png) no-repeat top left;
+    float: left;
+    height: 32px;
+    width: 47px;
+}
+.x-window-dlg .ext-mb-error {
+    background:transparent url(../images/dialog_warning.png) no-repeat top left;
+}
+.logoUploadfield .x-form-item {
+    margin-bottom: 0px !important;
+}
+
+.tng-managed-image {
+    border-width: 2px;
+    border-color: #ccd2d5;
+}
+
+.api div,.api span, .api td, .api th, .api textarea, .api input {
+    font-size: 14px !important;
+}
+
+.api strong, .api b {
+    font-weight: bold;
+}
+
+
+.api .header {
+    background-color: #7EA1B5;
+    padding: 20px;
+    color: #FFF;
+}
+
+.api .header .text {
+    color: #FFF;
+}
+
+.api .body {
+    padding: 20px;
+}
+
+.x-props-grid .x-grid3-td-name .x-grid3-cell-inner {
+    background-image: none !important;
+}
+
+td.tunnel-disabled .x-grid3-cell-inner {
+    color: #aaa;
+    font-weight: normal;
+    font-style: italic;
+}
+
+td.cert-error-text .x-grid3-cell-inner {
+    color: #ff0000 !important;
+}
+td.cert-valid-text .x-grid3-cell-inner {
+    color: #048A4E !important;
+}
+
+.cert-row-disabled * {
+     color: #888 !important;
+}
+.cert-row-request-pending * {
+     color: #FF9900 !important;
+}
+
+/* General Settings, Shared Objects Take Precedence */
+.shared_objects {
+    padding: 5px 0px 0px 21px;
+    margin-bottom: 10px;
+}
+
+.shared_objects_warning {
+    background: transparent url(../images/warning.gif) no-repeat 0px 7px;
+}
+
+.shared_objects_busy {
+    background: transparent url(../images/progress.gif) no-repeat 0px 7px;
+}
+
+.panorama-commit-msg {
+    margin-left: 8px;
+    margin-top:15px;
+}
+
+.x-list-body dt em {
+    word-wrap: break-word;
+}
+
+.panorama-commit-msg ul {
+    list-style:circle inside none;
+}
+
+.panorama-commit-msg ul li {
+    margin-bottom: 18px;
+}
+
+/* Icon combo */
+.x-icon-combo-icon {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    width: 18px;
+    height: 14px;
+}
+.x-icon-combo-input {
+    padding-left: 25px;
+}
+.x-form-field-wrap .x-icon-combo-icon {
+    top: 3px;
+    left: 5px;
+}
+.x-icon-combo-item {
+    background-repeat: no-repeat !important;
+    background-position: 3px 50% !important;
+    padding-left: 25px;
+}
+
+.x-grid-icon-col .x-grid3-cell-inner {
+    white-space: nowrap !important;
+    display:inline-table;
+    padding: 5px 2px 1px 3px !important; /* must agree with Pan.base.Constants.liveGridMiniRowHeight */
+}
+.ext-ie .x-grid-icon-col .x-grid3-cell-inner {
+    padding: 4px 2px 1px 3px !important; /* must agree with Pan.base.Constants.liveGridMiniRowHeight */
+}
+.ext-ie .x-grid-col-span-with-icon-left {
+    padding-left: 3px;
+}
+.ext-ie .x-grid-col-span-with-icon-right {
+    padding-right: 3px;
+}
+
+.commit_details {
+    padding-left:42px;
+    white-space: nowrap;
+}
+
+.commit_details_ie {
+    padding-left:39px;
+    white-space: nowrap;
+}
+
+.commit_warnings {
+    padding-left:28px;
+    white-space: nowrap;
+}
+
+.commit_warnings_ie {
+    padding-left:27px;
+    white-space: nowrap;
+}
+.commit_common {
+    padding-left:80px;
+    white-space: nowrap;
+}
+
+.x-superboxselect-item {
+    background-repeat: no-repeat !important;
+    background-position: 3px 50% !important;
+}
+
+.icon-combo-none{
+    padding: 1px 15px 1px 5px !important;
+}
+
+.pan-cell-inner-tag {
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+    float: right;
+    margin-left: 2px;
+}
+
+.ext-ie .x-pan-singleentry, .ext-gecko .x-pan-singleentry {
+    margin-bottom:-4px
+}
+
+.collgrp-log-storage-btn.x-btn-noicon .x-btn-small .x-btn-text {
+    margin-left:-5px;
+    margin-top:-2px;
+}
+
+.ext-gecko .collgrp-log-storage-btn.x-btn-noicon .x-btn-small .x-btn-text, .ext-ie .collgrp-log-storage-btn.x-btn-noicon .x-btn-small .x-btn-text {
+    margin-top:-3px;
+}
+
+.row {
+    width: 400px;
+    height: 90px;
+    margin: 0 auto;
+}
+.job-o, .job-m {
+    width:50%;
+    height:100%;
+    float: right;
+}
+.block {
+    width: 100%;
+    float: left;
+    height: 30px;
+}
+
+.block-lf {
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+.block-rt {
+    width: 60%;
+    float: right;
+    height: 100%;
+}
+
+.device-item {
+    float: left;
+    width: auto;
+    padding: 1px;
+    margin: 3px 0 3px 3px;
+    position: relative;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.device-list-inner {
+    height: 100%;
+    border: medium none;
+    margin:0 auto;
+}
+
+
+.device-list-frame {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color:  #FBFCFC;
+}
+
+.device-pic {
+    display: block;
+    float: left;
+    position:relative;
+    padding: 7px 5px 7px 5px;
+}
+
+.device-item a{
+    border: medium none;
+    display: block;
+    float: none;
+    height: auto;
+    line-height: 24px;
+    padding: 5px 5px 5px 25px;
+}
+
+.device-item .device-title {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.device-item .device-selector.x-form-checkbox-inner.x-form-check {
+    top: 0px !important;
+}
+
+.device-item .device-title.x-pan-disabled img {
+    opacity: 1;
+}
+
+.singleselect .device-item .device-title {
+    margin-left: 18px;
+}
+
+.multiselect .device-item .device-title{
+    position: relative;
+    padding-left: 25px;
+}
+
+.device-title em.x-hyperlink {
+    color:#2F688A;
+}
+.device-title.x-pan-disabled em.x-hyperlink, .x-tool-clearall.x-pan-disabled em.x-hyperlink {
+    color:#888888;
+}
+
+img.device-pic.x-pan-disabled {
+    opacity: 0.3;
+}
+
+.device-item.x-view-over, .device-item.x-view-selected{
+    border:1px solid #dddddd;
+    background: #efefef repeat-x left top;
+    padding: 0px;
+}
+
+.device-item .device-selector {
+    width: 16px;
+    height: 16px;
+    left: 4px;
+    position: absolute;
+}
+
+.device-list .x-toolbar {
+    height: 22px;
+}
+.tree-filter .x-tree-node-icon {
+    display: none !important;
+}
+.tree-filter .x-toolbar {
+    background-color: #C1C8CC;
+}
+.tree-filter .x-panel-body {
+    background-color:#E0E4E5 !important;
+}
+
+.x-tool.x-tool-clearall {
+    background: none repeat scroll 0 0 transparent !important;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: relative;
+    margin-right: 100px;
+}
+
+
+.x-combo-list.device-list {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 5px 5px 5px #98A9B4;
+}
+
+.x-combo-list-inner .x-panel-body {
+    border: none;
+}
+
+.device-list-inner .device-item.x-view-selected .x-form-check {
+    background-position: 0 -18px;
+}
+
+.device-detail li {
+    word-wrap: break-word;
+}
+.device-item img.managed-devices {
+    position: absolute;
+    cursor: pointer;
+}
+
+table.msg-status{
+    border-collapse:collapse;
+}
+table.msg-status, table.msg-status td, table.msg-status th{
+    border:1px solid black;
+}
+table.msg-status td {
+    padding: 3px;
+}
+
+.hsm-north .x-portal .x-column-layout-ct {
+    height: auto !important;
+}
+
+.x-panel.page.devices {
+    background-color: #316989 !important;
+}
+.x-panel.page.devices .x-panel-body {
+    border: none !important;
+}
+.side.tree-filter {
+    border: 1px solid #80A1B7;
+    -moz-border-radius: 5px 0px 0px 0px;
+    border-radius: 5px 0px 0px 0px;
+}
+.side.tree-filter.x-tree .x-panel-mc {
+    padding: 0 !important;
+}
+.side.tree-filter .x-toolbar {
+    background-color: #80A1B7;
+}
+.side.tree-filter .x-panel-body {
+    background-color:#FBFCFC !important;
+}
+.side.tree-filter .xtb-text {
+    color: #fff;
+}
+.side.tree-filter .x-btn button {
+    color: #fff !important;
+}
+
+/*--- Log Detail Window ---*/
+.x-log-detail .x-portal-column.x-first-column {
+    padding-left: 4px !important;
+}
+
+.x-log-detail .x-portal-column.x-last-column {
+    margin-right: 4px;
+    padding-right: 0px;
+}
+
+.x-log-detail .x-portal-column {
+    padding: 4px 4px 0 0;
+}
+
+.x-log-detail .x-portal-column .x-pan-grid-viewer {
+    margin-bottom: 4px;
+}
+
+.x-log-detail .x-portlet {
+    margin-bottom: 0px;
+}
+
+/*--- Tag Search ---*/ 
+#tag-search {
+    border-radius: 5px;
+    margin-left: -120px;
+}
+
+.tag-sort.name{
+    border: 1px solid #999999;
+    border-radius: 5px 0 0 5px;
+    border-right: 0 none;
+    margin-left: 85px;
+}
+
+.tag-sort.count{
+    border: 1px solid #999999;
+    border-radius: 0 5px 5px 0;
+}
+
+.tag-sort button {
+    color: #999999 !important;
+}
+
+.tag-sort.x-btn-pressed button {
+    color: #000 !important;
+}
+
+.tag-viewer .x-combo-list-item {
+    border: 1px solid #EBEDEE;
+}
+
+.tag-paging-sliders-over.x-resizable-handle {
+    filter:alpha(opacity=100);
+    opacity:0.4;
+}
+
+.pan-tag-toolbar label {
+    white-space: normal !important;
+}
+
+.x-tool-tag-filter-clear {
+    background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #036DDA;
+    width: 30px;
+    font-size: 10px;
+}
+
+.x-tool-tag-filter-name {
+    background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: auto;
+    padding-right: 5px;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.finder-inner {
+    box-shadow: -8px 8px 8px #80a1b6;
+}
+
+.finder-no-result-found {
+    border: 1px solid #80a1b6;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 12px;
+    color: #60606a;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+
+.finder-inner .x-tree-node-icon {
+    display:none;
+}
+
+.finder-inner .x-tree-elbow-plus, .finder-inner .x-tree-elbow-end-plus {
+   background: url(../images/plus.gif) 0px 0px;
+}
+
+.finder-inner .x-tree-elbow-minus, .finder-inner .x-tree-elbow-end-minus {
+    background: url(../images/minus.gif) 0px 0px;
+}
+
+.finder-inner .x-tree-node-loading .x-tree-elbow-plus, .finder-inner .x-tree-node-loading .x-tree-elbow-end-plus, .finder-inner .x-tree-node-loading .x-tree-elbow-minus, .finder-inner .x-tree-node-loading .x-tree-elbow-end-minus {
+    background: url(../js/3rdParty/ext/resources/images/default/tree/loading.gif) 0px 0px;
+}
+
+.finder-inner .panorama-pushed-row {
+    background-color: rgb(235, 240, 228);
+}
+
+.finder-inner .x-tree-selected {
+    background-color: #c9d6a6 !important;
+}
+
+.finder-trigger {
+    background: url(../js/3rdParty/ext/resources/images/default/tree/loading.gif) 0px 0px;
+}
+
+.finder-group {
+    font-weight: bold;
+}
+
+.finder-exact-match {
+    background: #b6c8d5 !important
+}
+
+#global_finder .x-form-trigger {
+    left: 130px;
+    height: 20px
+}
+
+.tag-drag-over {
+    background-color: #E4EBD3 !important;
+    background-image: none;
+    border-style: solid;
+
+}
+
+.pan-search {
+    background: url(/styles/paloaltothemes/images/paloalto/form/global_find.png?__version=1435943003) 0px 0px no-repeat;
+    padding: 2px 0px 0px 20px;
+    height: 16px;
+}
+
+.finder-result-grid-view .x-grid3-body {
+    padding: 10px 0px;
+}
+
+.finder-grid-view .x-grid3-field-name {
+    padding: 6px 4px 0px 0px;
+    text-align: right;
+    color: #5e727e !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    vertical-align: top;
+}
+
+.finder-grid-view .x-grid3-cell {
+    color: #000 !important;
+    padding: 0px 0px !important;
+    text-align: left !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.map {
+    position:relative;
+}
+
+.mapTooltip {
+    position:fixed;
+    background-color: rgba(249, 249, 249, .85);
+    fill: #333333;
+    border-style: solid;
+    border-width: 1px;
+    borderWidth: 1;
+    borderRadius: 3;
+    box-shadow: 1px 1px 1px #333333;
+    fontSize: 9px;
+    padding: 8px;
+    stroke-width: 1;
+    z-index: 1000;
+    max-width: 200px;
+    display:none;
+    color: #333333;
+}
+
+.zoomIn, .zoomOut, .zoomFit {
+    background-color:#dbdbdb;
+    border:1px solid #cfcfcf;
+    color:#161616;
+    width:16px;
+    height:18px;
+    line-height: 18px;
+    text-align:center;
+    border-radius:3px;
+    cursor:pointer;
+    position:absolute;
+    bottom : 5px;
+    font-weight:bold;
+    left : 5px;
+
+    -webkit-user-select: none; // For Webkit
+-khtml-user-select: none;
+    -moz-user-select: none; // For Mozilla
+-o-user-select: none;
+    user-select: none; // Default
+}
+
+.zoomOut {
+    bottom:30px;
+}
+
+.zoomIn {
+    bottom:55px;
+}
+
+.finder-preview {
+    margin: 0em 1em;
+}
+
+.finder-preview .x-panel-bbar {
+    display: none; !important
+}
+
+.finder-preview .x-grid3-scroller {
+    overflow: hidden; !important
+}
+
+.tag-toolbar-group {
+    padding: 5px;
+}
+
+.finder-loading {
+    background: url('../images/loading.gif') #FFF no-repeat 98% 2px !important
+}
+
+.policy-tag-object-browser .x-panel-header {
+
+    padding: 0 !important;
+}
+
+.policy-tag-object-browser .x-panel-header-text {
+    font-weight: normal !important;
+}
+
+.policy-tag-object-browser .sidesouth {
+    border:1px solid #cfcfcf;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+
+.x-grid3-cell-inner.active{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background-color:#dbdbdb;
+    border:1px solid #cfcfcf;
+    border-radius: 4px;
+}
+
+.column-content-tip a.x-grid3-hd-btn {
+    display: none;
+}
+
+/* This is for customize file field that indicates a configured value is present. */
+.has-configured-value {
+    background-color: #c8caca;
+}
+
+.printing .x-tool {
+    visibility: hidden;
+}
+
+.tag-tooltip {
+    word-wrap: break-word;
+}V„Àp‹      ]6¶]6¶@œ^ýp¹   4    :http://10.0.0.5/styles/pan.css?__version=1563886357 necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 23 Jul 2019 12:54:07 GMT
+Content-Type: text/css
+Content-Length: 60023
+ETag: "2c8e-ea77-5d370315"
+Last-Modified: Tue, 23 Jul 2019 12:52:37 GMT
+Expires: Fri, 20 Jul 2029 12:54:07 GMT
+ original-response-headers Server: 
+Date: Tue, 23 Jul 2019 12:54:07 GMT
+Content-Type: text/css
+Content-Length: 60023
+Connection: keep-alive
+ETag: "2c8e-ea77-5d370315"
+Last-Modified: Tue, 23 Jul 2019 12:52:37 GMT
+Expires: Fri, 20 Jul 2029 12:54:07 GMT
+ uncompressed-len 0 net-response-time-onstart 56 net-response-time-onstop 58   êw

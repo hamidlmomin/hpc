@@ -1,0 +1,86 @@
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2311): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2311): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2311): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:2630): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:2630): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:2630): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+failed to create drawable
+compiz (core) - Warn: glXCreatePixmap failed

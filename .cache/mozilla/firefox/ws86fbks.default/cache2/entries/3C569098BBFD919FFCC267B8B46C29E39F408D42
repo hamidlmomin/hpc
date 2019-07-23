@@ -1,0 +1,1812 @@
+/* Added for new ExtJS framewor */
+body.popup {
+	background-color: #306A89; !important 
+	margin: 0px;
+}
+
+#dBorder {
+	/* RNN: Used to create three dimensional effect (shadow and highlight) around inside of "frame". */
+	/*	height: 100%;  */
+	overflow-y: auto;
+	overflow-x: scroll;
+	/* 
+	border-top: 1px solid #999999;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #999999;
+	*/
+}
+
+#dContentInner {
+	/* RNN: Used to create three dimensional effect (shadow and highlight) around inside of "frame". */
+	
+}
+
+/*Please do not move this class to any other file or change the structure of this class i.e. background-image has to be the first property, as it is used for custom logo feature */
+.loginscreen_logo {
+    background-image:url(/images/login-page.gif);
+    width:440px;
+    height:345px;
+    background-position:center;
+    background-repeat: no-repeat
+}
+
+#dStatus { /* Status Bar */
+	position: absolute;
+	background-color: #006594; /*#2B85BA;*/
+	color: #FFFFFF;
+	bottom: 0px;
+}
+
+#dBtns {
+	/* Modified for new ExtJS framework
+	background-color: #F4F6F5; 
+	width: 100%;
+	padding-left: 1px;
+	height: 30px; 
+	*/
+	width: 100%;
+	padding-left: 1px;
+	height: 30px; 
+	border-color: #b7c594;
+    background: #c9d6a6;
+
+}
+
+#dBtns table {
+	vertical-align: middle;
+	height: 100%;
+}
+
+#dForm { /* Originally intended for forms. Gray background color. */
+	/* getting rid of the height 100% fixed the problem with having a vertical scrollbar in FF */
+	/*height: 100%;*/
+	background-color: #FFFFFF; /*#DDDDDD;*/
+	/* KK Now dForm is with in dBorder and that has the borders. Having a border here
+	 * make it thicker around the table
+	border-top: 1px solid #999999;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #999999;
+	*/
+}
+
+/* Not being used
+#dHeader {
+	background-color: #CCCCCC;
+	border-bottom: 1px solid white;
+	height: 58px;
+}
+*/
+#dButtonBar { /* Inappropriately named. Used to position tab buttons. */
+	width: 100%;
+	background-image: url(../images/background_tab.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 28px;
+	padding-top: 6px;
+	left: 100px;
+}
+
+#dButtonBar2 { /* Used for positioning the button bar */
+	position: absolute;
+	top: 10px;
+	right: 8px;
+}
+
+/* Not being used currently */
+#dNavbarTitle {
+	background-color: #CCCCCC;
+	width: 159px; /* width should be 21px less than #dNavbar */
+	padding: 3px 0px 3px 4px;
+	font-weight: bold;
+	border-bottom: 1px solid #999999;
+}
+
+#dError { /* Used to show errors in edit and delete pages */
+	background-color: #FFFF88;
+	color: #E10000;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #999999;
+	font-weight: bold;
+	overflow: auto;
+}
+
+.errclass {
+	background-color: #FFFF88;
+	color: #E10000;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #999999;
+	font-weight: bold;
+	overflow: auto;
+}
+
+#dHeaderError { /* Used to show errors in top of the main pages */
+	background-color: #FFFF88;
+	color: #E10000;
+	/*margin-top: 10px;*/
+	padding-top: 2px;
+	padding-bottom: 2px;
+	/*margin-left: 10px;*/ /*margin-right: 10px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #999999;
+	font-weight: bold;
+	/*overflow: auto;*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#tdSubButtonBar {
+	/* Used to position secondary widgets below the tabs */
+	background-color: #006594; /*#2b85bb;*/
+	border-bottom: 1px solid #235571; /*#444444;*/
+	height: 44px;
+}
+
+/* this is the row where the vsys/device location is shown in the sub button bar */
+#tdSubButtonBar .tdSubButtonBarData {
+	border-top: 1px solid #235571;
+	background-color: #7CA5D1; /*#86A6C1;*/
+}
+
+#tdSubButtonBar td {
+	/* Used to position secondary widgets below the tabs */
+	/*	background-color: #B8CDD9;  */
+	color: #FFFFFF;
+}
+
+/* These two are used to divide sections in the sub button bar e.g. in policies page it divides the
+ * vsys selection and the zone selections. The left one has border on right and the right one has a 
+ * border on left
+ */
+.subButtonBarDividerLeft {
+	border-right: 1px solid #2e7cab;
+	padding-left: 10px;
+}
+
+.subButtonBarDividerRight {
+	border-left: 1px solid #a2d0eb;
+	padding-right: 10px;
+}
+
+/*
+ * These are used to divide sections in other pages which have a white background
+ */
+.dividerLeft {
+	border-right: 1px solid #9B9B9B;
+	padding-left: 10px;
+}
+
+.dividerRight {
+	border-left: 1px solid #C0C0C0;
+	padding-right: 10px;
+}
+
+.contextMenus {
+	position: absolute;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px 2px 2px 1px;
+	border-color: #ACA899 #808080 #808080 #ACA899;
+	visibility: hidden
+}
+
+.menuItem {
+	cursor: pointer;
+	font-size: 11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.menuItemOn {
+	cursor: pointer;
+	font-size: 11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: white;
+	background-color: #316AC5;
+	text-decoration: none;
+}
+
+/* for the help link */
+a#ohelp {
+	color: #e4f3f3;
+	text-decoration: none
+}
+
+a#ohelp:link {
+	color: #e4f3f3;
+	text-decoration: none
+}
+
+a#ohelp:visited {
+	color: #e4f3f3;
+	text-decoration: none
+}
+
+a#ohelp:hover {
+	color: #e4f3f3;
+	text-decoration: underline
+}
+
+a#ohelp:active {
+	color: #e4f3f3;
+	text-decoration: none
+}
+
+/* end of stuff for the help link */
+a {
+	color: #036DDA;
+	text-decoration: none
+}
+
+a:link {
+	color: #036DDA;
+	text-decoration: none
+}
+
+a:visited {
+	color: #036DDA;
+	text-decoration: none
+}
+
+a:hover {
+	color: #036DDA;
+	text-decoration: underline
+}
+
+a:active {
+	color: #036DDA;
+	text-decoration: none
+}
+
+a.header {
+	color: #FFFFFF;
+	text-decoration: underline
+}
+
+a.header:link {
+	color: #FFFFFF;
+	text-decoration: underline
+}
+
+a.header:visited {
+	color: #FFFFFF;
+	text-decoration: underline
+}
+
+a.header:hover {
+	color: #CCEBFF;
+	text-decoration: underline
+}
+
+a.header:active {
+	color: #CCEBFF;
+	text-decoration: underline
+}
+
+a.title {
+	color: #196390;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+a.title:link {
+	color: #196390;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+a.title:visited {
+	color: #196390;
+	text-decoration: underline
+}
+
+a.title:hover {
+	color: #cb6b04;
+	text-decoration: underline
+}
+
+a.title:active {
+	color: #0069A6;
+	text-decoration: underline
+}
+
+#dBtns a {
+	color: #0069A6;
+	text-decoration: underline
+}  /* RNN: Used for paging links. */
+#dBtns a:link {
+	color: #0069A6;
+	text-decoration: underline
+}
+
+#dBtns a:visited {
+	color: #0069A6;
+	text-decoration: underline
+}
+
+#dBtns a:hover {
+	color: #000000;
+	text-decoration: underline
+}
+
+#dBtns a:active {
+	color: #0069A6;
+	text-decoration: underline
+}
+
+td.buttonBar a {
+	color: #80D0FF;
+	text-decoration: none
+}  /* RNN: These styles are used for the old tab version */
+td.buttonBar a:link {
+	color: #80D0FF;
+	text-decoration: none
+}
+
+td.buttonBar a:visited {
+	color: #80D0FF;
+	text-decoration: none
+}
+
+td.buttonBar a:hover {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+td.buttonBar a:active {
+	color: #80D0FF;
+	text-decoration: none
+}
+
+td.buttonBarSelected a {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+td.buttonBarSelected a:link {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+td.buttonBarSelected a:visited {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+td.buttonBarSelected a:hover {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+td.buttonBarSelected a:active {
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+/* for the tree menu on the left side */
+a.itemTitle {
+	color: #316989;
+	text-decoration: none
+}
+
+a.itemTitle:link {
+	color: #316989;
+	text-decoration: none
+}
+
+a.itemTitle:visited {
+	color: #316989;
+	text-decoration: none
+}
+
+a.itemTitle:hover {
+	color: #316989;
+	text-decoration: underline
+}
+
+a.itemTitle:active {
+	color: #316989;
+	text-decoration: none
+}
+
+a.itemTitleBold {
+	color: #316989;
+	text-decoration: none;
+	font-weight: bold
+}
+
+a.itemTitleBold:link {
+	color: #316989;
+	text-decoration: none;
+	font-weight: bold
+}
+
+a.itemTitleBold:visited {
+	color: #316989;
+	text-decoration: none;
+	font-weight: bold
+}
+
+a.itemTitleBold:hover {
+	color: #316989;
+	text-decoration: underline;
+	font-weight: bold
+}
+
+a.itemTitleBold:active {
+	color: #316989;
+	text-decoration: none;
+	font-weight: bold
+}
+
+a.subtle {
+	color: #000000;
+	text-decoration: none
+}
+
+a.subtle:link {
+	color: #000000;
+	text-decoration: none
+}
+
+a.subtle:visited {
+	color: #000000;
+	text-decoration: none
+}
+
+a.subtle:hover {
+	color: #000000;
+	text-decoration: underline
+}
+
+a.subtle:active {
+	color: #000000;
+	text-decoration: none
+}
+
+div,input,select,span,td,textarea,th {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+div.caption { /* Used to position side captions in dialogs */
+	position: absolute;
+	top: -6px;
+	left: 6px;
+}
+
+div.dialog { /* Makes the blue border around popup dialogs */
+	position: absolute;
+	padding: 4px;
+	background-color: #0058EB;
+}
+
+div.dScroll { /* Used for scrolling DIV elements */
+	/* Modified for new ExtJS framework, use the parent background color
+	background-color: #FFFFFF;
+	*/
+	border-top: 1px solid #999999;
+	border-right: 1px solid #999999; 
+	border-bottom: 1px solid #999999; 
+	border-left: 1px solid #999999;
+	overflow: auto;
+}
+
+div.dScrollBGPStats {
+	/* Used for scrolling Details DIV elements in BGP stata */
+	/* Modified for new ExtJS framework, use the parent background color
+	background-color: #FFFFFF;
+	*/
+	border-top: 1px solid #999999;
+	border-right: 1px solid #999999; /* KK BC #FFFFFF; */
+	border-bottom: 1px solid #999999; /* KK BC #FFFFFF; */
+	border-left: 1px solid #999999;
+	overflow: auto;
+}
+
+div.dBGPPeerDetailStats {
+	/* Used for scrolling Details DIV elements in BGP stata */
+	/* Modified for new ExtJS framework, use the parent background color
+	background-color: #FFFFFF;
+	*/
+	border-top: 1px solid #999999;
+	border-right: 1px solid #999999; /* KK BC #FFFFFF; */
+	border-bottom: 1px solid #999999; /* KK BC #FFFFFF; */
+	border-left: 1px solid #999999;
+	overflow: auto;
+}
+
+div.dAlternateRow {
+	/* used for setting the background div to same color as of every other row -- see the style alternateRow for TR */
+	background-color: #F4F6F5;
+}
+
+form {
+	margin: 0px;
+}
+
+h1 { /* Used on Login page */
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #808080;
+	font-size: 17px;
+}
+
+h2 { /* Used on ACC page */
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #cb6b04;
+	font-size: 12px;
+	margin: 10px 10px 10px 0px;
+}
+
+h2.compact { /* Used on ACC page */
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #cb6b04;
+	font-size: 12px;
+	margin: 10px 10px 0px 0px;
+}
+
+img.buttonBar { /* Used to space out buttons horizontally */
+	margin-left: 7px;
+}
+
+img.buttonBarSmall { /* Used to space out buttons horizontally */
+	margin-left: 2px;
+	vertical-align: middle;
+}
+
+input.button {
+	font-weight: bold;
+	margin: 5px 0px 4px 4px;
+}
+
+input.buttonBar {
+	margin: 5px 0px 0px 4px;
+}
+
+input.buttonFixed {
+	font-weight: bold;
+	width: 80px;
+	margin: 5px 0px 4px 4px;
+}
+
+input.buttonVertical { /* Used for vertically arranged buttons */
+	font-weight: bold;
+	margin: 2px 5px 3px 5px;
+}
+
+input.buttonSmall {
+	/* Used to fit in table rows. Also used in expanding tables.  */
+	height: 17px;
+	font-size: 9px;
+	margin: 0px 3px 0px 0px; /* RNN: Modified button spacing. */
+}
+
+.labelTop2 {
+	/* Modified for ExtJS framework 
+	color: #0052A4;
+	*/
+	color: #5A6E7A;
+}
+
+/* Added for new ExtJS framework */
+fieldset legend {
+	color: #5A6E7A;
+}
+
+p.navbar {
+	margin: 4px 0px 4px 4px;
+}
+
+select.filter {
+	margin-right: 7px;
+}
+
+select.fixed {
+	width: 141px;
+}
+
+span.menuBar {
+	padding: 3px 8px 3px 8px;
+}
+
+table.dialog { /* Used for popup dialogs */
+	/* Modified for new ExtJS framework
+	background-color: #FFFFFF; 
+	*/
+	background-color: #F2F6FA; 
+}
+
+table.list {
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	margin-bottom: 17px;
+}
+
+/* invisible row - used to fix FF3 bug (bug 12111) - this empty row will occupy all the space */
+tr.inv {
+	height: 100%;
+	padding-bottom: 100%;
+}
+
+tr.alternateRow {
+	/* used for setting the background of every other row */
+	background-color: #F4F6F5;
+}
+
+tr.unused { /* used for setting the background of every other row */
+	background-image: url(/images/unused-rule-bg.gif);
+	background-repeat: repeat;
+}
+
+tr.unusedPanorama {
+	background-image: url(/images/unused-rule-bg.gif);
+	background-repeat: repeat;
+}
+
+tr.panoramaPushedRow {
+	/* used for setting the background of panoram pushed rows */
+	background-color: #D6E4A4;
+}
+
+tr.panoramaPushedAlternateRow {
+	/* used for setting the background of panoram pushed rows */
+	background-color: #CCDD8C;
+}
+
+tr.filters { /* filter row enabled */
+	background-color: #D8E5EF; /*#E8F5FD;*/
+}
+
+td.captionTop {
+	/* Used for captions located at the top of the page. ??? */
+	vertical-align: top;
+	padding: 6px 0px 0px 6px;
+}
+
+td.element {
+	/* Used to provide vertical spacing of stacked form elements */
+	height: 25px;
+}
+
+td.form { /* Used to create a margin around form elements */
+	padding: 10px 10px 11px 10px;
+	border-bottom: 1px solid #999999;
+}
+
+td.labelTop {
+	/* Used in dialogs to label tall elements like text areas */
+	vertical-align: top;
+	padding: 6px 0px 0px 0px;
+}
+
+td.labelTop2 { /* Used for labelling form elements in a popup */
+	padding: 4px 0px 3px 2px;
+	font-weight: bold;
+	/* Modified for ExtJS framework
+	color: #0052A4;
+	*/
+	color: #5A6E7A;
+}
+
+/* KK Not used yet */
+td.labelTop2Comp {
+	/* Used for labelling compulsory form elements in a popup */
+	font-weight: bold;
+	/* Modified for ExtJS framework
+	color: #0052A4;
+	*/
+	color: #5A6E7A;
+	padding: 4px 5px 3px 10px;
+	background-image: url(/images/red_star.png);
+	background-repeat: no-repeat;
+	background-position: top 1%;
+}
+
+td.labelTop3 { /* Used for labelling form sub elements in a popup */
+	padding: 4px 0px 3px 2px;
+	/* Modified for ExtJS framework
+	color: #0052A4;
+	*/
+	color: #5A6E7A;
+}
+
+td.labelTopRight {
+	/* Used for labelling form elements in a popup right aligned */
+	padding: 4px 3px 3px 2px;
+	font-weight: bold;
+	/* Modified for ExtJS framework
+	color: #0052A4;
+	*/
+	color: #5A6E7A;
+	text-align: right;
+}
+
+td.comment {
+	color: gray;
+	font-size: 10px;
+}
+
+td.comments {
+	color: gray;
+	font-size: 10px;
+}
+
+td.line { /* Used to create a separator line in dialogs */
+	border-bottom: 1px solid #999999;
+	padding: 2px 4px 2px 0px;
+}
+
+/* Added  by KK */
+td.policy_line {
+	/* Used in policies page to make the whole cell context_sensitive */
+	border-bottom: 1px solid #A4BCCF; /*#999999;*/
+	border-right: 1px solid #A4BCCF; /*#999999;*/
+	padding: 2px 4px 2px 1px;
+	/* KK commented out as now there is no right clicks anymore and so we don't want
+	 * the cursor to be a pointer anywhere in the cell
+	cursor: pointer;
+	 */
+}
+
+td.policy_line_thicker_top_border {
+	/* Used in policies page to demarcate between panorama pushed policies and local policies */
+	border-bottom: 1px solid #A4BCCF; /*#999999;*/
+	border-right: 1px solid #A4BCCF; /*#999999;*/
+	border-top: 2px solid #56636E;
+	padding: 2px 4px 2px 1px;
+}
+
+td.menu_line {
+	/* used as a separator in context menus, not working yet - height is too much */
+	border-top: 1px solid #999999;
+}
+
+/* end of Added by KK */
+td.listTop {
+	padding: 3px 4px 3px 4px;
+	border-top: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-left: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+td.listFirstCol {
+	padding: 3px 4px 3px 4px;
+	border-left: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+td.list {
+	padding: 3px 4px 3px 4px;
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+td.list-gray {
+	padding: 3px 4px 3px 4px;
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+	color: #999999;
+}
+
+td.listNoSideBorder {
+	padding: 3px 4px 3px 4px;
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+/* added by KK */
+td.listNoBottomBorder {
+	padding: 3px 4px 3px 4px;
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+td.listNoBorder {
+	padding: 3px 4px 3px 4px;
+}
+
+td.listAllBorder {
+	padding: 3px 4px 3px 4px;
+	border-left: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+}
+
+td.listClipped {
+	overflow: hidden;
+	white-space: nowrap;
+	/*text-overflow: ellipsis;*/
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	padding: 3px 4px 3px 4px;
+}
+
+/* end added by KK */
+td.listNoPad {
+	border-bottom: 1px solid #A4BCCF; /*#CCCCCC;*/
+	border-right: 1px solid #A4BCCF; /*#CCCCCC;*/
+	padding: 0px 0px 0px 0px;
+}
+
+td.policies { /* Used in the Policies table */
+	padding: 1px 2px 1px 2px;
+	height: 16px;
+}
+
+/* supposed to be invisible to the user, right most column to fill space */
+td.inv {
+	/* Modified for new ExtJS framework 
+	background-image: url(/images/white_background.png);
+	background-color: #FFFFFF;
+	border: 0px;
+	*/
+	background-image: url(/images/light_blue_background.png);
+	background-color: #F2F6FA;  /* same as body color */
+	border: 0px;
+}
+
+td.noLine { /* Same as td.line but without the line */
+	padding: 2px 4px 2px 0px;
+}
+
+td.subTable { /* Used for expanding tables */
+	background-color: #DEE9FF;
+	padding-right: 0px;
+}
+
+td.subTable td.list {
+	border-bottom: 1px solid #BDC6D9;
+	padding: 3px 4px 3px 4px;
+}
+
+td.subTable td.listNoPad {
+	border-bottom: 1px solid #BDC6D9;
+	padding: 0px;
+}
+
+td.context {
+	color: #0000cc;
+	border-bottom: 1px solid #BDC6D9;
+}
+
+td.list_context {
+	/* KK We don't want a solid line at the bottom and it should be
+	   a different color */
+	color: #0000cc;
+	/* border-bottom: 1px solid #BDC6D9; */
+	padding: 3px 4px 3px 4px;
+}
+
+/* this is used to show the text in the delete confirmation popups */
+td.del_confirm {
+	font-size: 11px;
+	padding: 5px;
+}
+
+th {
+	/* Modified for new ExtJS framework
+	font-weight: bold; 
+	background-color: #D8E5EF; 
+	padding: 3px 4px 3px 4px;
+	*/
+    background: #acc1cf url(paloaltothemes/images/paloalto/grid/grid3-blue-hrow.png?__version=1435943004) repeat-x scroll left top;
+    border-bottom: 1px solid #9db1bf;
+}
+
+th.listBorder { /* same as th with a separator on right border */
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	background-color: #D8E5EF; 
+	padding: 3px 4px 3px 4px;
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	*/
+    background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+    border-bottom: 1px solid #a9bb6a;
+	border-right: 1px solid #a9bb6a; 
+}
+
+/* used in policies page for the 1st column */
+th.contextEntry {
+	border-right: 1px solid #A4BCCF; /*#999999;*/
+	border-bottom: 1px solid #A4BCCF; /*#999999;*/
+	font-weight: bold; /* KK added by me */
+	cursor: pointer; /* KK added by me */
+	color: #1D5677;
+	background: #D8E5EF;
+	text-align: center;
+}
+
+/* used in policies page for the 1st column, when we want it to look the same but there is 
+ * no right click menu (like seeing the panorama pushed pre/post rules) 
+ */
+th.contextNoEntry {
+	border-right: 1px solid #A4BCCF; /*#999999;*/
+	border-bottom: 1px solid #A4BCCF; /*#999999;*/
+	font-weight: bold; /* KK added by me */ /*cursor: pointer;*/
+	/* KK added by me */
+	color: #1D5677;
+	background: #D8E5EF;
+	text-align: center;
+}
+
+th.dialog {
+	font-weight: bold;
+	/* RNN: Had to add this because of change to <th> style. */
+	background-color: #0058EB;
+	color: white;
+	font-family: Trebuchet MS, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+th.list {
+	/* Modified for new ExtJS framework
+	background-color: #DDDDDD;
+	padding: 3px 4px 3px 4px;
+	border-bottom: 0px solid #999999;
+	*/
+    background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+    border-bottom: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+}
+
+th.policies {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+
+ 	background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+th.policiesBorderAll {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #E6E6E6;
+	color: #1D5677; 
+	border-bottom: 1px solid #A4BCCF; 
+	border-top: 1px solid #A4BCCF; 
+	border-left: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+
+ 	background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* some pages have a filter at the top and so need the tables to have a border (e.g. applications page) */
+th.policiesBorderTop {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	border-top: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+
+ 	background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* When we did the scrolling table, we found there was a problem with IE if we did a rowspan=2
+ * So I had to break it up into two rows. Use policies1 as the top row and polices2 as the 
+ * lower row. These are the same as th.policies except the background image is split into two.
+ * Also th.policies1 does not have a lower border
+ */
+th.policies1 {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg_1.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 0px;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+	color: white;
+ 	background: #a7b57a url(paloaltothemes/images/paloalto/grid/grid3-hrow-group.png?__version=1435943004) repeat-x scroll left top;
+    border-bottom: 1px solid #a9bb6a;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* same as th.policies1 except it has a border at the top, can be used for pages where the table does
+ * not start at the top (like in the applications page because there is a filter table on top)
+ */
+th.policies1BorderTop {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg_1.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-top: 1px solid #A4BCCF; 
+	border-bottom: 0px;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+	color: white;
+ 	background: #a7b57a url(paloaltothemes/images/paloalto/grid/grid3-hrow-group.png?__version=1435943004) repeat-x scroll left top;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+th.policies2 {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg_2.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+ 	background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* supposed to be invisible to the user, right most column to fill space */
+th.inv {
+	/* Modified for new ExtJS framework
+	background-image: url(/images/white_background.png);
+	background-color: #FFFFFF;
+	border: 0px;
+	*/
+	background-image: url(/images/light_blue_background.png);
+	background-color: #F2F6FA;  /* same as body color */
+	border: 0px;
+}
+
+/* same as th.policies */
+th.policiesGroupHeader {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/dashboard_title_bg.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+	color: white;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+ 	background: #a7b57a url(paloaltothemes/images/paloalto/grid/grid3-hrow-group.png?__version=1435943004) repeat-x scroll left top;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+th.policiesGroupHeaderBorderTop {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #C9DAEA;
+	background-image: url(/images/dashboard_title_bg.gif);
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	border-top: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+	color: white;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+ 	background: #a7b57a url(paloaltothemes/images/paloalto/grid/grid3-hrow-group.png?__version=1435943004) repeat-x scroll left top;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* same as th.policiesGroupHeader except background is lighter */
+th.policiesGroupSubHeader {
+	/* Modified for new ExtJS framework
+	font-weight: bold;
+	font-size: 10px;
+	background-color: #D8E5EF; 
+	color: #1D5677; 
+	border-right: 1px solid #A4BCCF; 
+	border-bottom: 1px solid #A4BCCF; 
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: center;
+	*/
+	font: 11px/15px arial,tahoma,helvetica,sans-serif;
+    border-left: 1px solid #e4ebd3;
+    border-right: 1px solid #a9bb6a;
+    border-top: 1px solid #a9bb6a;
+    border-bottom: 1px solid #a9bb6a;
+ 	background: #c9d6a6 url(paloaltothemes/images/paloalto/grid/grid3-hrow.png?__version=1435943003) repeat-x scroll left top;
+	padding: 3px 4px 3px 4px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+/* style used for field set legends */
+.fieldSetLegent {
+	color: blue;
+	padding: 0 5px;
+}
+
+th.subTable {
+	font-weight: normal; /* RNN: Changed font-weight to normal from bold. */
+	background-color: #A1CCE5;
+	border-right: 1px solid #7D9FB3; /* RNN: Changed border colors */
+	border-bottom: 1px solid #7D9FB3;
+	padding: 3px 4px 3px 4px;
+}
+
+td.grid_v20 { /* Used to create a vertical grid with 20px spacing */
+	background-image: url(/images/grid_v20.gif);
+	border-bottom: 1px solid #999999;
+}
+
+a.table_header {
+	color: #0066cc;
+	text-decoration: none
+}
+
+a.table_header:link {
+	color: #0066cc;
+	text-decoration: none
+}
+
+a.table_header:visited {
+	color: #0066cc;
+	text-decoration: none
+}
+
+a.table_header:hover {
+	color: #003366;
+	text-decoration: underline
+}
+
+a.table_header:active {
+	color: #0066cc;
+	text-decoration: none
+}
+
+/**  styles related to clipping in table cells **/
+div.clipping {
+	overflow: hidden;
+	white-space: nowrap;
+	/*text-overflow: ellipsis;*/
+	position: static;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	padding: 2px 4px 3px 3px;
+	/* This needs to be tailored to each column where the feature is being used. */
+	/* If the feature is being used in multiple columns, you might have to specify the width using in-line style tags. */
+	width: 168px;
+}
+
+div.clipWrapper {
+	position: static;
+	height: 20px;
+}
+
+div.visible {
+	overflow: visible;
+	white-space: nowrap;
+	position: absolute;
+	border: 1px solid #CCC266;
+	background-color: #FFF7B2;
+	padding: 2px 4px 3px 3px;
+}
+
+/** end of styles related to clippin in table cells **/
+	/** styles related to rounded corners. **/
+	/* This is for the rounded div on the sub button bar */
+div#dSubButtonBarRound {
+	background-color: #2B85BA;
+}
+
+b.rtopSubButton {
+	background-color: #2B85BA;
+}
+
+/* not being used right now */
+div#dSubButtonBarRound table#mainSubButtonBarTable {
+	border-left: 1px solid #1c5a7f;
+	background-color: #5BA8D6;
+	width: 100%;
+}
+
+div#dNavbarRound {
+	margin: 0 10px;
+	background-color: #DDE6EC; /*#E7E9E9;*/
+	overflow: hidden;
+	/* KK New */
+	height: 100%;
+}
+
+div#dNavbarRound table#mainNavbarTable {
+	background-color: #FFFFFF;
+	border-left: 5px solid #D8D8D8;
+	border-right: 5px solid #D8D8D8;
+	width: 100%;
+	/* height: 95%; */
+}
+
+/* dTree is the div in dNavbar where the tree is drawn */
+div#dTree {
+	overflow: auto;
+	width: 160px;
+	height: 100%;
+}
+
+/* This is used to print the header like Network/Objects/ etc. above the rounded nav bar table.
+ * Can also be used above the rounded table on the dContent side
+ */ /*
+.roundTableHeader {
+	color: #196390; 
+	font-weight: bold; 
+	padding: 4px 4px;
+}
+*/
+.roundTableHeader {
+	color: #316989; /*#196390;*/
+	font-weight: bold;
+	padding: 15px 1px 7px 4px;
+	font-size: 12px;
+}
+
+span#lastUpdate {
+	color: #316989; /*#196390;*/
+	font-weight: normal;
+	padding: 15px 1px 7px 4px;
+	font-size: 12px;
+}
+
+div#dContentRound {
+	margin-left: 10px;
+}
+
+div#dContentRound table#mainContentTable {
+	/* Modified for new ExtJS framework - get background from parent and get rid of borders
+	background-color: #FFFFFF;
+	border-left: 5px solid #D8D8D8;
+	border-right: 5px solid #D8D8D8;
+	*/
+	width: 100%;
+	vertical-align: top;
+	align: left;
+}
+
+div#dPopupContentRound {
+	/* If you put width 100% here it works with IE but screws up 
+	 * Firefox. So I am going to not put anything here and dynamically
+	 * set the width to 100% using a javascript function adjustPopupContentRoundWidth
+	 * in clientValidation.js
+	 */
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+/* for the buttons at the bottom of popup windows */
+table.popupButtons {
+	width: 96%;
+}
+
+div#dPopupContentRound table#popupMainContentTable {
+	/* Modified for new ExtJS framework 
+	background-color: #FFFFFF;
+	border-left: 5px solid #D8D8D8;
+	border-right: 5px solid #D8D8D8;
+	width: 100%;
+	vertical-align: top;
+	*/
+	background-color: #F2F6FA;
+	border: 1px solid #ccd2d5;
+	width: 100%;
+	vertical-align: top;
+}
+
+#dPopupContentInner { /*
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	*/ /* Benedict wanted 20 pixels */
+	padding: 20px 20px;
+}
+
+#dPopupContentInnerLessPadding {
+	padding: 5px 5px;
+}
+
+div#dStatusBarRound {
+	color: white;
+	margin-bottom: 2px;
+	background-color: #006594; /*#2B85BA;*/
+	margin-left: 189px;
+}
+
+div#dStatusBarRound table#mainStatusBarTable {
+	border-left: 1px solid #235571; /*#1c5a7f;*/
+	background-color: #7CA5D1; /*#5BA8D6;*/
+	width: 100%;
+	height: 17px;
+}
+
+/*
+ these are styles related to those where we manually round the table 
+ as opposed to using the Nifty class. The styles for Nifty class is 
+ in niftycorners.css
+*/
+	/* since the background of the content changed we needed a different one for navbar and content */
+b.rtopNavbar,b.rbottomNavbar {
+	display: block;
+	background: #DDE6EC
+}  /*#E7E9E8}*/
+b.rtop,b.rbottom {
+	display: block;
+	background: #F2F6FA /*#F3F3F3*/
+}
+
+b.rtopNavbar b,b.rbottomNavbar b {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background: #D8D8D8
+}
+
+b.rtop b,b.rbottom b {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background: #D8D8D8
+}
+
+b.rtopSubButton b,b.rbottomSubButton b {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background: #7CA5D1
+}  /*#5BA8D6}*/
+b.rtopStatusBar b {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background: #86A6C1
+}  /*#5BA8D6}*/
+b.rm1 {
+	margin: 0 5px
+}
+
+b.rm2 {
+	margin: 0 3px
+}
+
+b.rm3 {
+	margin: 0 2px
+}
+
+b.rtop b.rm4,b.rbottom b.rm4 {
+	margin: 0 1px;
+	height: 2px
+}
+
+b.rtopNavbar b.rm4,b.rbottomNavbar b.rm4 {
+	margin: 0 1px;
+	height: 2px
+}
+
+/* changing border #1C5A7F to #235571, also changing background color from
+ * #5BA8D6 to #86A6C1 */
+b.rtopSubButton b.rm1 {
+	margin: 0 0 0 5px;
+	border-top: 1px solid #235571;
+	background-color: #7CA5D1;
+	border-left: 1px solid #235571
+}
+
+b.rtopSubButton b.rm2 {
+	margin: 0 0 0 3px;
+	background-color: #7CA5D1;
+	border-left: 1px solid #235571
+}
+
+b.rtopSubButton b.rm3 {
+	margin: 0 0 0 2px;
+	background-color: #7CA5D1;
+	border-left: 1px solid #235571
+}
+
+b.rtopSubButton b.rm4 {
+	margin: 0 0 0 1px;
+	background-color: #7CA5D1;
+	border-left: 1px solid #235571
+}
+
+b.rtopSubButton b.rm5 {
+	margin: 0 0 0 0px;
+	background-color: #7CA5D1;
+	border-left: 1px solid #235571
+}
+
+b.rbottomStatusBar b {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	background: #7CA5D1
+}  /*#5BA8D6}*/ /* changing border #1C5A7F to #235571*/
+b.rbottomStatusBar b.rm1 {
+	margin: 0 0 0 5px;
+	border-bottom: 1px solid #235571;
+	border-left: 1px solid #235571
+}
+
+b.rbottomStatusBar b.rm2 {
+	margin: 0 0 0 3px;
+	border-left: 1px solid #235571
+}
+
+b.rbottomStatusBar b.rm3 {
+	margin: 0 0 0 2px;
+	border-left: 1px solid #235571
+}
+
+b.rbottomStatusBar b.rm4 {
+	margin: 0 0 0 1px;
+	height: 2px;
+	border-left: 1px solid #235571
+}
+
+/* end of styles related to rounded corners */
+.rfsmall { /* Risk index */
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #cb6b04;
+	font-size: 11px;
+}
+
+.rfbig { /* Risk index */
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #cb6b04;
+	font-size: 36px;
+}
+
+#riskFactor {
+	float: right;
+}
+
+/********* styles related to search suggest ********************/
+.suggest_link {
+	/* if you change this then you need to do the same for gSuggestNormalBgColor
+	 * (in clientValidations.js)
+	 */
+	background-color: #FFFFFF;
+	padding: 2px 6px 2px 6px;
+}
+
+.suggest_link_over {
+	/* if you change this then you need to do the same for gSuggestHighlightBgColor
+	 * (in clientValidations.js)
+	 */
+	background-color: #E7E9E8;
+	padding: 2px 6px 2px 6px;
+}
+
+#search_suggest {
+	position: absolute;
+	background-color: #FFFFFF;
+	text-align: left;
+	/* We will put the border on the fly when we show some results */
+	/* border: 1px solid #000000; */
+}
+
+div.search_suggest_visible {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	overflow: auto;
+	width: 120px;
+	height: 200px;
+	display: block;
+}
+
+div.search_suggest_invisible {
+	background-color: #FFFFFF;
+	border: 0px solid #FFFFFF;
+	width: 0px;
+	height: 0px;
+	display: none;
+}
+
+/*********** end of styles related to search suggest ***************/
+ul.bullet {
+	list-style-image: url("/images/bullet.gif");
+	/* KK Looks like we need both list-style-position and list-style-type for it to work in FF */
+	list-style-position: outside;
+	list-style-type: disc;
+}
+
+/* this is for fieldset/legends */
+legend {
+	color: black;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+.wait {
+	color: #999999;
+}
+
+td.retro {
+	padding: 3px 10px 5px 4px;
+	background-color: #FFFFFF;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+
+td.retro-value {
+	padding: 3px 10px 5px 4px;
+	background-color: #FFFFFF;
+	vertical-align: top;
+}
+
+table.retro {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+/*********** disabled object styles *************/
+a.dsbld {
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a.dsbld:link {
+	color: #CCCCCC;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a.dsbld:visited {
+	color: #CCCCCC;
+	text-decoration: none
+}
+
+a.dsbld:hover {
+	color: #CCCCCC;
+	text-decoration: none
+}
+
+a.dsbld:active {
+	color: #CCCCCC;
+	text-decoration: none
+}
+
+th.dsbld {
+	color: #CCCCCC;
+}
+
+td.dsbld {
+	color: #CCCCCC;
+}
+
+img.dsbld {
+	opacity: .20;
+	filter: alpha(opacity = 20);
+}
+
+/************ styles used for scrolling tables i.e. tables with header fixed *************/
+.divScrollingTable {
+	/* Since different for different browsers, doing it in divManagement_02.js
+	/* This works for IE
+	overflow: auto;
+	*/ /* This works for FF
+	overflow-x: auto;
+	overflow-y: hidden;
+	*/
+	
+}
+
+.tableScrollingTable {
+	width: 100%;
+}
+
+.headScrollingTable {
+	position: relative;
+}
+
+.headScrollingTable tr {
+	position: relative;
+	top: expression(offsetParent.scrollTop);
+	/* IE5+ only, actually needed for IE 7 too */
+}
+
+.bodyScrollingTable {
+	overflow-y: auto;
+}
+
+/* Since we are going to pad right for last column of body, do so for last column of header too */
+.headScrollingTable th:last-child {
+	padding-right: 20px;
+}  /*prevent Mozilla scrollbar from hiding cell content*/
+.headScrollingTable td:last-child {
+	padding-right: 20px;
+}  /*prevent Mozilla scrollbar from hiding cell content*/
+.bodyScrollingTable td:last-child {
+	padding-right: 20px;
+}  /*prevent Mozilla scrollbar from hiding cell content*/
+	/************ end styles used for scrolling tables i.e. tables with header fixed *************/
+.filterHeaderText { /*
+	font-weight: bold;
+	color: gray;
+	*/
+	font-weight: bold;
+	font-size: 10px;
+	color: #1D5677; /*#51646F;*/
+}
+
+td.filterHeader { /*
+	background-color: #CCCCCC;
+	color: gray;
+	font-weight: bold;
+	*/
+	padding: 2px 0px 2px 5px;
+	background-color: #C9DAEA;
+	background-image: url(/images/table_header_bg.gif);
+	color: #1D5677; /*#51646F;*/
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #A4BCCF; /*#AAAAAA;*/
+}
+
+td.filterComments {
+	color: gray;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+td.filterCell {
+	cursor: pointer;
+	font-size: 11px;
+}
+
+td.filterCellStrong {
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+span.comment,span.comments {
+	color: gray;
+	font-size: 10px;
+}
+
+td.filterexp { /* Used in filter expression dialog fields */
+	vertical-align: top;
+	padding: 5px 5px 5px 5px;
+}
+
+span.labeltext {
+	font-weight: bold;
+	color: #196390;
+}
+
+span.dsbld {
+	color: #CCCCCC;
+}
+ë…4Ö…      ]6¶]6¶@œ^ýp¹   ?    :http://10.0.0.5/styles/falcon_content.css?__version=1563886357 necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 23 Jul 2019 12:54:07 GMT
+Content-Type: text/css
+Content-Length: 41002
+ETag: "2c8f-a02a-5d370315"
+Last-Modified: Tue, 23 Jul 2019 12:52:37 GMT
+Expires: Fri, 20 Jul 2029 12:54:07 GMT
+ original-response-headers Server: 
+Date: Tue, 23 Jul 2019 12:54:07 GMT
+Content-Type: text/css
+Content-Length: 41002
+Connection: keep-alive
+ETag: "2c8f-a02a-5d370315"
+Last-Modified: Tue, 23 Jul 2019 12:52:37 GMT
+Expires: Fri, 20 Jul 2029 12:54:07 GMT
+ uncompressed-len 0 net-response-time-onstart 42 net-response-time-onstop 43    *

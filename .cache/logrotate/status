@@ -1,0 +1,17 @@
+logrotate state -- version 2
+"/home/hpcsa/.cache/upstart/im-config.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/gnome-keyring-ssh.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/indicator-bluetooth.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/unity7.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/update-notifier-release.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/unity-panel-service.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/unity-settings-daemon.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/indicator-printers.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/dbus.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/ssh-agent.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/indicator-power.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/at-spi2-registryd.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/gnome-session-Unity.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/indicator-sound.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/gnome-keyring-gpg.log" 2019-7-23-2:46:24
+"/home/hpcsa/.cache/upstart/window-stack-bridge.log" 2019-7-23-2:46:24
